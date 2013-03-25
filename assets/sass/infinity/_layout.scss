@@ -65,11 +65,6 @@ h1#site-title, div#site-title {
   z-index: 10 !important;
   margin-bottom: -3px;
 }
-
-/* ===================== */
-/* ! Base Menu Styling   */
-/* ===================== */
-
 /* ===================== */
 /* ! Base Menu Styling   */
 /* ===================== */
@@ -272,7 +267,6 @@ border: 0px;
 .footer-widget h3 {
   margin-bottom: 10px;
   color: #FEDA71;
-  font-size: 16px;
 }
 
 #footer-widget-right {
@@ -579,6 +573,9 @@ span.post-comments {
 
 p#breadcrumbs {
   margin-top: 0px;
+}
+.moretag {
+  margin-left: 10px;
 }
 
 /* Intro Boxes for authors, categories and tags */
