@@ -1,0 +1,172 @@
+@mixin no-margin {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+@mixin negative-padding { 
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@mixin padding { 
+  padding: 30px;
+}
+
+  @mixin clearfix() { *zoom:1;
+    &:before, &:after { content: " "; display: table; }
+    &:after { clear: both; }
+  }
+
+  @mixin mobileClearfix() {
+    @include respondTo(smallScreen) { &:before, &:after { content: " "; display: table; }
+      &:after { clear: both; }
+      &:last-child { float: none; }
+    }
+  }
+
+// Mixin for Semantic Grid reponsiveness
+
+  @mixin respondTo($media) {
+    @if $media == smallScreen {
+      @media only screen and (max-width: $screenSmall - 1) { @content; }
+    } @else if $media == mediumScreen {
+      @media only screen and (max-width: $screenMedium) and (min-width: $screenSmall) { @content; }
+    } @else if $media == largeScreen {
+      @media only screen and (min-width: $screenXlarge) { @content; }
+    }
+  }
+  // Font size mixin to include px and rem
+
+  @mixin font-size($size, $is-important: false) {
+    $size: if(unitless($size), $size, $size / 1px);
+    
+    @if $is-important {
+      font-size: $size + px !important;
+      font-size: ($size / 10) + rem !important;
+    } @else {
+      font-size: $size + px;
+      font-size: ($size / 10) + rem;
+    }
+  }
+
+  // Create CSS Triangles in a Breeze
+
+  @mixin cssTriangle($triangleSize, $triangleColor, $triangleDirection) {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid $triangleSize;
+    @if ($triangleDirection == top) {
+      border-color: $triangleColor transparent transparent transparent;
+    }
+    @if ($triangleDirection == bottom) {
+      border-color: transparent transparent $triangleColor transparent;
+    }
+    @if ($triangleDirection == left) {
+      border-color: transparent transparent transparent $triangleColor;
+    }
+    @if ($triangleDirection == right) {
+      border-color: transparent $triangleColor transparent transparent;
+    }
+    // .example { @include cssTriangle(5px, #fff, bottom); }
+  }
+  
+    // Create CSS Triangles in a Breeze
+
+  @mixin cssTriangleAdvanced($color, $a, $b, $c, $direction : bottom, $rotatation : 0deg) {
+    content: "";
+    display: block;
+    line-height: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 $a $b $c;
+    @if ($direction == top) {
+      border-color: $color transparent transparent transparent;
+      _border-color: #ffffff $color $color $color;
+    }
+    @if ($direction == bottom) {
+      border-color: transparent transparent $color transparent;
+      _border-color: $color $color #ffffff $color;
+    }
+    @if ($direction == left) {
+      border-color: transparent transparent transparent $color;
+      _border-color: $color $color $color #ffffff;
+    }
+    @if ($direction == right) {
+      border-color: transparent $color transparent transparent;
+      _border-color: $color #ffffff $color $color;
+    }
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='$color');
+    
+    //Rotation !
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    -ms-filter:rotate($deg);
+    -ms-transform:rotate($deg);
+    position: relative;
+    
+    // .example { @include myTriangle($white, 60px, 32px, 30px, 227deg); }
+  }
+
+/* SCSS port of CSS at http://htmldog.com/articles/suckerfish/dropdowns/ */
+/* Built with compass http://www.compass-style.org */
+/* Generates the styles for suckerfish dropdowns */
+
+/* 
+   Pass in the parameters $topLevelWidth and $lowerLevelWidth. The former controls the width of the first level,
+   i.e. the visible level. The lower level is the width of the sub-levels, which get exposed on hover.
+
+   Call this mixin with @import suckerfish(topLevelWidth, lowerLevelWidth), then style it as needed.
+
+   To override any of these styles, place your code after the @import directive.
+
+   For IE 6 compatibility, you must add javascript that attaches .sfhover class to mouseover.
+
+   This will handle up to three levels of dropdowns.
+
+   Be sure to minify before deploying to production.
+*/
+
+@mixin suckerfish($topLevelWidth, $lowerLevelWidth) {
+  ul { 
+    list-style-type: none;
+    line-height: 1;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+  }
+  a {
+    display: block;
+    padding: 5px 8px;
+  }
+  li {
+    float: left;
+    &:hover, &.sfhover {
+      ul {
+        left:auto;
+        
+          li {
+              float: none;
+              display: block;
+          }
+        
+        ul {
+          left: -999em;
+        }
+      }
+    }
+    li:hover, li.sfhover {
+      ul {
+        left: auto;
+      }
+    }
+    ul {
+      position: absolute;
+      left: -999em;
+    }
+  }
+}

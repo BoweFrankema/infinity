@@ -1,0 +1,47 @@
+/*
+Theme Name: &#8734; Infinity
+Theme URI: http://infinity.presscrew.com
+Description: The "Base" theme, is a parent theme based on the Infinity Theming Engine, which provides a powerful set of templates and default theme options to give you a great starting point for most projects.
+Version: 1.1b
+Author: PressCrew
+Author URI: http://community.presscrew.com/
+License: GNU General Public License
+License URI: license.txt
+Tags: buddypress, two-columns, fixed-width, flexible-width, theme-options,translation-ready, custom-background, custom-menu, left-sidebar, right-sidebar,threaded-comments, custom-colors, dark, white,featured-images,post-formats,full-width-template
+*/
+//
+//  This is the main stylesheet!
+//
+
+@import "compass/css3";
+
+@import "modular-scale";
+
+@import "foundation/settings";
+
+@import "foundation/functions/all";
+
+@import "foundation/mixins/infinity-mixins";
+
+
+@import "foundation/common/globals";
+@import "foundation/common/typography";
+
+@import "foundation/components/grid", "foundation/components/modules/all";
+
+// // Media Queries Overrides
+// @import "foundation/components/modules/mqueries";
+
+@import "infinity/layout";
+@import "infinity/wordpress";
+@import "infinity/design";
+@import "infinity/buddypress";
+@import "infinity/responsive";
+@import "infinity/icons";
+@import "infinity/buttons";
+
+
+
+
+
+
