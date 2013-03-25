@@ -1,13 +1,3 @@
-// Settings file containing Foundation defaults
-
-// Grid Settings
-
-$rowWidth: 1150px !default;
-$columnGutter: 30px !default;
-$totalColumns: 12 !default;
-$mobileTotalColumns: 4 !default;
-$blockGridElements: 12 !default; // Highest number of block grid elements, Maximum of 24 supported
-
 // Colors Settings
 
 $mainColor: #2ba6cb !default;
@@ -23,15 +13,50 @@ $darkEdge: rgba(#000, .2) !default;
 
 // Font Settings
 
+$ratio: fourth(); 
+$baseFontSize: 14px !default;
+$importantModNum: 44px !default;
+$base-size: $baseFontSize $importantModNum;
 $fontSmoothing: antialiased !default;
+
 $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $headerFontWeight: bold !default;
 $headerFontStyle: normal !default;
-$headerFontColor: #222 !default;
+$headerFontColor: #444 !default;
 $bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $bodyFontWeight: normal !default;
 $bodyFontStyle: normal !default;
 $bodyFontColor: $txtColor !default;
+
+// Grid Settings
+
+$rowWidth: 1150px !default;
+$columnGutter: 30px !default;
+$totalColumns: 16 !default;
+$mobileTotalColumns: 4 !default;
+$blockGridElements: 16 !default; // Highest number of block grid elements, Maximum of 24 supported
+
+// Button Settings
+
+$buttonRadius: 3px !default;
+$btnBase: 10px !default;
+
+$tinyBtnBase: $btnBase - 5 !default;
+$smallBtnBase: $btnBase - 3 !default;
+$largeBtnBase: $btnBase + 5 !default;
+
+// Off Canvas Width Settings
+
+$mainWidth: 80% !default;
+$complementaryWidth: 20% !default;
+
+// Modular Scale Settings
+
+// Media Queries
+
+$screenSmall: 768px !default;
+$screenMedium: 1279px !default;
+$screenXlarge: 1441px !default;
 
 // Text Direction Settings
 
@@ -46,70 +71,5 @@ $defaultOpposite: right !default; // Change this to 'left' for right-to-left lan
   $defaultFloat: right;
   $defaultOpposite: left;
 }
-
-// Button Settings
-
-$buttonRadius: 3px !default;
-$btnBase: 10px !default;
-
-$tinyBtnBase: $btnBase - 5 !default;
-$smallBtnBase: $btnBase - 3 !default;
-$largeBtnBase: $btnBase + 5 !default;
-
-// Tab Settings
-
-$tabHeight: 40px !default;
-$tabTermFontSize: 12px;
-
-// Nav Bar Settings
-
-$navBarHeight: 40px !default;
-$navFlyoutBaseWidth: 250px !default;
-
-// Top Bar Settings
-
-$topBarBgColor: #222 !default;
-$topBarHeight: 45px !default;
-$topBarHeightMobile: 45px !default;
-$topBarBtmMargin: 30px !default;
-$topBarTitleWeight: bold !default;
-$topBarTitleSize: 17px !default;
-$topBarLinkColor: #fff !default;
-$topBarLinkWeight: bold !default;
-$topBarLinkSize: 13px !default;
-$topBarDropBgColor: #222 !default;
-$topBarDropLinkColor: #fff !default;
-$topBarDropToggleSize: 5px !default;
-$topBarDropToggleColor: #fff !default;
-$topBarDropToggleAlpha: 0.5 !default;
-$topBarSearchWidth: 200px !default;
-$topBarLoginWidth: 300px !default;
-$topBarLoginButtonWidth: 60px !default;
-$topBarLoginInputWidth: ($topBarLoginWidth - $topBarLoginButtonWidth) / 2 !default;
-$topBarBreakPoint: 940px !default; // Change to 9999px for always mobile layout
-$topBarNavToggleSize: 8px !default;
-$topBarNavToggleColor: #fff !default;
-
-
-// Off Canvas Width Settings
-
-$mainWidth: 80% !default;
-$complementaryWidth: 20% !default;
-
-// Modular Scale Settings
-
-// $ratio: $golden; // THIS IS DEFAULT IN MODULAR-SCALE
-$baseFontSize: 14px !default;
-$importantModNum: 44px !default;
-$base-size: $baseFontSize $importantModNum;
-// Produced the following list of values: 14, 17, 23, 27, 37, 44, 59, 71, 95, 115;
-// http://www.modularscale.com by Tim Brown
-// https://github.com/scottkellum/modular-scale by scottkellum
-
-// Media Queries
-
-$screenSmall: 768px !default;
-$screenMedium: 1279px !default;
-$screenXlarge: 1441px !default;
 
 
