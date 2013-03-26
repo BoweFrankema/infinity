@@ -3006,35 +3006,48 @@ a.button:hover, button:hover, #review_form #submit:hover {
   display: inline;
   margin: 0; }
 
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.wp-editor-wrap * {
+  -moz-box-sizing: content-box !important; }
+
 /* The Grid ---------------------- */
 .row {
   width: 1150px;
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto; }
-  .row .row {
-    width: auto;
-    max-width: none;
-    min-width: 0;
-    margin: 0 -15px; }
-  .row.collapse .column, .row.collapse .columns {
-    padding: 0; }
-  .row .row {
-    width: auto;
-    max-width: none;
-    min-width: 0;
-    margin: 0 -15px; }
-    .row .row.collapse {
-      margin: 0; }
+
+.row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px; }
+
+.row.collapse .column, .row.collapse .columns {
+  padding: 0; }
+
+.row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px; }
+
+.row .row.collapse {
+  margin: 0; }
 
 .column, .columns {
   float: left;
   min-height: 1px;
   padding: 0 15px;
   position: relative; }
-  .column.centered, .columns.centered {
-    float: none;
-    margin: 0 auto; }
+
+.column.centered, .columns.centered {
+  float: none;
+  margin: 0 auto; }
 
 [class*="column"] + [class*="column"]:last-child {
   float: right; }
@@ -3042,52 +3055,52 @@ a.button:hover, button:hover, #review_form #submit:hover {
 [class*="column"] + [class*="column"].end {
   float: left; }
 
-.one, .row .one {
+.row .one {
   width: 6.25%; }
 
-.two, .row .two {
+.row .two {
   width: 12.5%; }
 
-.three, .row .three {
+.row .three {
   width: 18.75%; }
 
-.four, .row .four {
+.row .four {
   width: 25%; }
 
-.five, .row .five {
+.row .five {
   width: 31.25%; }
 
-.six, .row .six {
+.row .six {
   width: 37.5%; }
 
-.seven, .row .seven {
+.row .seven {
   width: 43.75%; }
 
-.eight, .row .eight {
+.row .eight {
   width: 50%; }
 
-.nine, .row .nine {
+.row .nine {
   width: 56.25%; }
 
-.ten, .row .ten {
+.row .ten {
   width: 62.5%; }
 
-.eleven, .row .eleven {
+.row .eleven {
   width: 68.75%; }
 
-.twelve, .row .twelve {
+.row .twelve {
   width: 75%; }
 
-.thirteen, .row .thirteen {
+.row .thirteen {
   width: 81.25%; }
 
-.fourteen, .row .fourteen {
+.row .fourteen {
   width: 87.5%; }
 
-.fifteen, .row .fifteen {
+.row .fifteen {
   width: 93.75%; }
 
-.sixteen, .row .sixteen {
+.row .sixteen {
   width: 100%; }
 
 .row .offset-by-one {
@@ -3210,11 +3223,10 @@ a.button:hover, button:hover, #review_form #submit:hover {
 .pull-fourteen {
   right: 87.5%; }
 
-img {
-  height: auto; }
-
 img, object, embed {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto;
+  width: auto; }
 
 img {
   -ms-interpolation-mode: bicubic; }
@@ -3225,11 +3237,13 @@ img {
 /* Nicolas Gallagher's micro clearfix */
 .row {
   *zoom: 1; }
-  .row:before, .row:after {
-    content: " ";
-    display: table; }
-  .row:after {
-    clear: both; }
+
+.row:before, .row:after {
+  content: "";
+  display: table; }
+
+.row:after {
+  clear: both; }
 
 /* Block Grids ---------------------- */
 /* These are 2-up, 3-up, 4-up and 5-up ULs, suited
@@ -3240,191 +3254,51 @@ them to switch them just like the layout grid
 For IE7/8 compatibility block-grid items need to be
 the same height. You can optionally uncomment the
 lines below to support arbitrary height, but know
-that IE7/8 do not support :nth-of-type.
+that IE7/8 do not support :nth-child.
 -------------------------------------------------- */
 .block-grid {
   display: block;
   overflow: hidden;
   padding: 0; }
-  .block-grid > li {
-    display: block;
-    height: auto;
-    float: left; }
-  .block-grid.one-up {
-    margin: 0; }
-    .block-grid.one-up > li {
-      width: 100%;
-      padding: 0 0 15px; }
-  .block-grid.two-up {
-    margin: 0 -15px; }
-    .block-grid.two-up > li {
-      width: 50%;
-      padding: 0 15px 15px; }
-      .block-grid.two-up > li:nth-of-type(2n+1) {
-        clear: both; }
-  .block-grid.three-up {
-    margin: 0 -12px; }
-    .block-grid.three-up > li {
-      width: 33.33333%;
-      padding: 0 12px 12px; }
-      .block-grid.three-up > li:nth-of-type(3n+1) {
-        clear: both; }
-  .block-grid.four-up {
-    margin: 0 -10px; }
-    .block-grid.four-up > li {
-      width: 25%;
-      padding: 0 10px 10px; }
-      .block-grid.four-up > li:nth-of-type(4n+1) {
-        clear: both; }
-  .block-grid.five-up {
-    margin: 0 -8px; }
-    .block-grid.five-up > li {
-      width: 20%;
-      padding: 0 8px 8px; }
-      .block-grid.five-up > li:nth-of-type(5n+1) {
-        clear: both; }
-  .block-grid.six-up {
-    margin: 0 -8px; }
-    .block-grid.six-up > li {
-      width: 16.66667%;
-      padding: 0 8px 8px; }
-      .block-grid.six-up > li:nth-of-type(6n+1) {
-        clear: both; }
-  .block-grid.seven-up {
-    margin: 0 -8px; }
-    .block-grid.seven-up > li {
-      width: 14.28571%;
-      padding: 0 8px 8px; }
-      .block-grid.seven-up > li:nth-of-type(7n+1) {
-        clear: both; }
-  .block-grid.eight-up {
-    margin: 0 -8px; }
-    .block-grid.eight-up > li {
-      width: 12.5%;
-      padding: 0 8px 8px; }
-      .block-grid.eight-up > li:nth-of-type(8n+1) {
-        clear: both; }
-  .block-grid.nine-up {
-    margin: 0 -8px; }
-    .block-grid.nine-up > li {
-      width: 11.11111%;
-      padding: 0 8px 8px; }
-      .block-grid.nine-up > li:nth-of-type(9n+1) {
-        clear: both; }
-  .block-grid.ten-up {
-    margin: 0 -8px; }
-    .block-grid.ten-up > li {
-      width: 10%;
-      padding: 0 8px 8px; }
-      .block-grid.ten-up > li:nth-of-type(10n+1) {
-        clear: both; }
-  .block-grid.eleven-up {
-    margin: 0 -8px; }
-    .block-grid.eleven-up > li {
-      width: 9.09091%;
-      padding: 0 8px 8px; }
-      .block-grid.eleven-up > li:nth-of-type(11n+1) {
-        clear: both; }
-  .block-grid.twelve-up {
-    margin: 0 -8px; }
-    .block-grid.twelve-up > li {
-      width: 8.33333%;
-      padding: 0 8px 8px; }
-      .block-grid.twelve-up > li:nth-of-type(12n+1) {
-        clear: both; }
-  .block-grid.thirteen-up {
-    margin: 0 -8px; }
-    .block-grid.thirteen-up > li {
-      width: 7.69231%;
-      padding: 0 8px 8px; }
-      .block-grid.thirteen-up > li:nth-of-type(13n+1) {
-        clear: both; }
-  .block-grid.fourteen-up {
-    margin: 0 -8px; }
-    .block-grid.fourteen-up > li {
-      width: 7.14286%;
-      padding: 0 8px 8px; }
-      .block-grid.fourteen-up > li:nth-of-type(14n+1) {
-        clear: both; }
-  .block-grid.fifteen-up {
-    margin: 0 -8px; }
-    .block-grid.fifteen-up > li {
-      width: 6.66667%;
-      padding: 0 8px 8px; }
-      .block-grid.fifteen-up > li:nth-of-type(15n+1) {
-        clear: both; }
-  .block-grid.sixteen-up {
-    margin: 0 -8px; }
-    .block-grid.sixteen-up > li {
-      width: 6.25%;
-      padding: 0 8px 8px; }
-      .block-grid.sixteen-up > li:nth-of-type(16n+1) {
-        clear: both; }
 
-/*
-  * Print styles.
-  *
-  * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
-  * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
- */
-.print-only {
-  display: none !important; }
+.block-grid > li {
+  display: block;
+  height: auto !important;
+  float: left; }
 
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important; }
+.block-grid.one-up > li {
+  width: 100%;
+  padding: 0 0 15px; }
 
-  /* Black prints faster: h5bp.com/s */
-  a, a:visited {
-    text-decoration: underline; }
+.block-grid.two-up > li {
+  width: 50%;
+  padding: 0 15px 15px; }
 
-  a[href]:after {
-    content: " (" attr(href) ")"; }
+/*  .block-grid.two-up>li:nth-child(2n+1) {clear: left;} */
+.block-grid.three-up > li {
+  width: 33.33%;
+  padding: 0 12px 12px; }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
+/*  .block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
+.block-grid.four-up {
+  margin: 0 -10px; }
 
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: ""; }
+.block-grid.four-up > li {
+  width: 25%;
+  padding: 0 10px 10px; }
 
-  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
+/*  .block-grid.four-up>li:nth-child(4n+1) {clear: left;} */
+.block-grid.five-up > li {
+  width: 20%;
+  padding: 0 8px 8px; }
 
-  thead {
-    display: table-header-group; }
+/*  .block-grid.five-up>li:nth-child(5n+1) {clear: left;} */
+/* Mobile Block Grids */
+@media only screen and (max-width: 767px) {
+  .block-grid.mobile {
+    margin-left: 0; }
 
-  /* h5bp.com/t */
-  tr, img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2, h3 {
-    page-break-after: avoid; }
-
-  .hide-on-print {
-    display: none !important; }
-
-  .print-only {
-    display: block !important; }
-
-  .hide-for-print {
-    display: none !important; }
-
-  .show-for-print {
-    display: inherit !important; } }
+  .block-grid.mobile > li {
+    float: none;
+    width: 100%;
+    margin-left: 0; } }
