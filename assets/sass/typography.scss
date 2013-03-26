@@ -1,0 +1,129 @@
+@import "settings";
+  /* Base Type Styles Using Modular Scale ---------------------- */
+  body {
+    font-family: $FontFamily;
+  }
+
+  body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+    font-size: ms(0);
+    direction: $textDirection;
+  }
+
+  p { font-family: inherit; font-weight: $bodyFontWeight; font-size: ms(0); line-height: 1.6; margin-bottom: ms(1);}
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $headerFontFamily;
+    font-weight: $headerFontWeight;
+    font-style: $headerFontStyle;
+    color: $headerFontColor;
+    text-rendering: optimizeLegibility;
+    line-height: 1.1;
+    margin-bottom: ms(0);
+    margin-top: ms(0);
+    small { font-size: 60%; color: lighten($headerFontColor, 30%); line-height: 0; }
+  }
+
+  h1 { font-size: ms(5); }
+  h2 { font-size: ms(4); }
+  h3 { font-size: ms(3); }
+  h4 { font-size: ms(2); }
+  h5 { font-size: ms(1); }
+  h6 { font-size: ms(0); }
+
+  /* ============================================= */
+/* ! Typography and Tags (ul, li,a, input etc)   */
+/* ============================================= */
+
+
+h1 {
+  &#category-title, &#tag-title {
+    font-style: normal;
+    color: (darken, $headerFontStyle, 20%);
+    font-size: 114.3%;
+    line-height: 18px;
+    margin: 0;
+  }
+  &#category-title span, &#tag-title span {
+    color: lighten($headerFontColor, 30%);
+    font-size: 120%;
+  }
+}
+
+h2 {
+  &.page-title a, &.post-title a {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+h1 {
+  &.page-title a, &.post-title a {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .post-edit-link {
+    font-size: 27px !important;
+    line-height: 0;
+  }
+}
+
+
+h2 .post-edit-link {
+  font-size: 100% !important;
+  line-height: 0;
+}
+
+.moretag {
+  margin-left: 10px;
+}
+
+  hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 22px 0 21px; height: 0; }
+
+
+  em, i { font-style: italic; line-height: inherit; }
+  strong, b { font-weight: bold; line-height: inherit; }
+  small { font-size: 60%; line-height: inherit; }
+  code { font-weight: bold; background: $highlightColor; }
+
+  /* Lists ---------------------- */
+  ul, ol, dl { font-size: ms(0); line-height: 1.6; margin-bottom: ms(1); list-style-position: outside; }
+  ul {
+    li {
+      ul, ol { margin-#{$defaultFloat}: 20px; margin-bottom: 0; }
+    }
+    &.square, &.circle, &.disc { margin-#{$defaultFloat}: ms(1); }
+    &.square { list-style-type: square;
+      li ul { list-style: inherit; }
+    }
+    &.circle { list-style-type: circle;
+      li ul { list-style: inherit; }
+    }
+    &.disc { list-style-type: disc;
+      li ul { list-style: inherit; }
+    }
+    &.no-bullet { list-style: none; }
+    &.large li { line-height: 21px; }
+  }
+  ol { margin-#{$defaultFloat}: 20px;
+    li {
+      ul, ol { margin-#{$defaultFloat}: 20px; margin-bottom: 0; }
+    }
+  }
+  dl {
+    dt { font-weight: bold; }
+    dd { margin-bottom: 10px; }
+  }
+
+  /* Blockquotes ---------------------- */
+  blockquote, blockquote p { line-height: 1.5; color: lighten($headerFontColor, 30%); }
+  blockquote { margin: 0 0 ms(1); padding: 9px 20px 0 19px; border-#{$defaultFloat}: 1px solid #ddd;
+    cite { display: block; font-size: ms(0) - 1; color: lighten($headerFontColor, 20%);
+      &:before { content: "\2014 \0020"; }
+      a, a:visited { color: lighten($headerFontColor, 20%); }
+    }
+  }
+
+  abbr, acronym { text-transform: uppercase; font-size: 90%; color: $headerFontColor; border-bottom: 1px solid #ddd; cursor: help; }
+  abbr { text-transform: none; }

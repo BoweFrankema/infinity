@@ -19,19 +19,19 @@ Tags: buddypress, two-columns, fixed-width, flexible-width, theme-options,transl
 
 @import "foundation/mixins/infinity-mixins";
 
-@import "foundation/common/globals";
-@import "foundation/common/typography";
+@import "global";
+@import "typography";
 
 // // Media Queries Overrides
 // @import "foundation/components/modules/mqueries";
 
-@import "infinity/layout";
-@import "infinity/design";
-@import "infinity/buddypress";
-@import "infinity/responsive";
-@import "infinity/icons";
-@import "infinity/buttons";
+@import "layout";
+@import "design";
+@import "buddypress";
+@import "responsive";
+@import "icons";
+@import "buttons";
 
-@import "foundation/components/grid";
+@import "grid";
 
 

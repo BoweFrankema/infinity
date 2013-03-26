@@ -1,6 +1,10 @@
+@import "compass/css3";
+@import "modular-scale";
+@import "foundation/mixins/infinity-mixins";
+
 // Colors Settings
 
-$mainColor: #2ba6cb !default;
+$mainColor: #3FACB4 !default;
 $secondaryColor: #e9e9e9 !default;
 $alertColor: #c60f13 !default;
 $successColor: #5da423 !default;
@@ -8,11 +12,25 @@ $txtColor: #222 !default;
 $highlightColor: #ffff99 !default;
 $black: #000 !default;
 $white: #fff !default;
-$shinyEdge: rgba(#fff, .5) !default;
-$darkEdge: rgba(#000, .2) !default;
+$headerFontColor: #444 !default;
+$bodyFontColor: $txtColor !default;
+
+// lighten main
+$mainColor5l: lighten($mainColor, 5%);
+$mainColor10l: lighten($mainColor, 10%);
+$mainColor20l: lighten($mainColor, 20%);
+$mainColor30l: lighten($mainColor, 30%);
+$mainColor40l: lighten($mainColor, 40%);
+
+// lighten main
+$mainColor5d: darken($mainColor, 5%);
+$mainColor10d: darken($mainColor, 10%);
+$mainColor20d: darken($mainColor, 20%);
+$mainColor30d: darken($mainColor, 30%);
+$mainColor40d: darken($mainColor, 40%);
 
 // Font Settings
-
+$FontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $ratio: fourth(); 
 $baseFontSize: 14px !default;
 $importantModNum: 44px !default;
@@ -22,11 +40,13 @@ $fontSmoothing: antialiased !default;
 $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $headerFontWeight: bold !default;
 $headerFontStyle: normal !default;
-$headerFontColor: #444 !default;
 $bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $bodyFontWeight: normal !default;
 $bodyFontStyle: normal !default;
-$bodyFontColor: $txtColor !default;
+
+// Global Margin Settings
+
+$globalMargin: 30px;
 
 // Grid Settings
 
@@ -70,6 +90,16 @@ $defaultOpposite: right !default; // Change this to 'left' for right-to-left lan
 } @else {
   $defaultFloat: right;
   $defaultOpposite: left;
+}
+@function convert-number-to-word($num) {
+  $count:1;
+  @each $word in one,two,three,four,five,six,seven,eight,nine,ten,eleven,
+    twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen,
+    twenty,twentyone,twentytwo,twentythree,twentyfour{
+    @if ($count == $num) { @return $word; }
+    $count: $count + 1;
+  }
+  @return "invalid";
 }
 
 

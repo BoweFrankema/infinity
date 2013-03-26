@@ -1,5 +1,4 @@
 /* Using some fancy CSS magic to add our icons */
-
 .item-list-tabs * a:before,
 #item-buttons * a:before,
 .sidebar-activity-tabs * a:before,
@@ -27,346 +26,285 @@ div.link-vote-panel div.clickers a.up:before,
 #subscription-toggle:before,
 .single-topic h1:before,
 .group-forum-topic #bbpress-forums h3:before {
-    font-weight: normal;
-    font-family: "iconsweetsRegular";
-    color: inherit;
-    padding-right: 2px;
-    font-size: 130%;
-    position: relative;
-    top: 2px;
-    text-transform: none;
-}
+  font-weight: normal;
+  font-family: "iconsweetsRegular";
+  color: inherit;
+  padding-right: 2px;
+  font-size: 130%;
+  position: relative;
+  top: 2px;
+  text-transform: none; }
 
 /* WordPress Icons */
 .post-top {
-    padding-top: 0px
-}
+  padding-top: 0px; }
 
 /* Blog Icons */
 #category-title:before {
-    content: "L"
-}
+  content: "L"; }
 
 #tag-title:before,
 span.post-tags:before {
-    content: "."
-}
+  content: "."; }
 
 #author-description h3:before {
-    content: "a"
-}
+  content: "a"; }
 
 /* ================ */
 /* ! Post Formats   */
 /* ================ */
 .format-quote .post-meta-data {
-    display: none
-}
+  display: none; }
 
 .format-quote .entry {
-    border-left: 5px solid #EEEEEE;
-    font-family: "Georgia",serif;
-    font-size: 140%;
-    line-height: 140%;
-    margin-bottom: 18px;
-    padding-left: 15px;
-}
+  border-left: 5px solid #EEEEEE;
+  font-family: "Georgia",serif;
+  font-size: 140%;
+  line-height: 140%;
+  margin-bottom: 18px;
+  padding-left: 15px; }
 
 .post-title:before {
-    background: none repeat scroll 0 0 #555555;
-    border-radius: 50% 50% 50% 50%;
-    color: #FFFFFF;
-    float: right;
-    font-size: 140%;
-    padding: 0 0.8% 1.5%;
-    position: relative;
-    text-shadow: -1px 1px 0 #000000;
-    top: -8px;
-}
+  background: none repeat scroll 0 0 #555555;
+  border-radius: 50% 50% 50% 50%;
+  color: #FFFFFF;
+  float: right;
+  font-size: 140%;
+  padding: 0 0.8% 1.5%;
+  position: relative;
+  text-shadow: -1px 1px 0 #000000;
+  top: -8px; }
 
 .format-video .post-title:before {
-    content: "F"
-}
+  content: "F"; }
 
 .format-link .post-title:before {
-    content: "Q"
-}
+  content: "Q"; }
 
 .format-gallery .post-title:before {
-    content: "3"
-}
+  content: "3"; }
 
 .format-image .post-title:before {
-    content: "2"
-}
+  content: "2"; }
 
 .format-audio .post-title:before {
-    content: "4"
-}
+  content: "4"; }
 
 .format-chat .post-title:before {
-    content: '"'
-}
+  content: '"'; }
 
 .format-status .post-title:before {
-    content: "#"
-}
+  content: "#"; }
 
 .format-quote .post-title:before {
-    content: "'"
-}
+  content: "'"; }
 
 /* Post Meta Icons */
 span.post-author:before {
-    content: "d"
-}
+  content: "d"; }
 
 span.post-category:before {
-    content: "L"
-}
+  content: "L"; }
 
 span.time-posted:before {
-    content: "R"
-}
+  content: "R"; }
 
 span.post-comments:before,
 span.comments a:before {
-    content: "#"
-}
+  content: "#"; }
 
 /* BuddyPress Icons */
 .activity-comments * :before {
-    display: none
-}
+  display: none; }
 
 #item-buttons * a:before,
 .activity-meta * a:before,
 .button:before,
 .generic-button a:before {
-    display: inline-block;
-    font-size: 135%;
-    padding: 0 2px 6px 1px;
-}
+  display: inline-block;
+  font-size: 135%;
+  padding: 0 2px 6px 1px; }
 
 /* Some Small Padding tweaks to make the icons look sweet */
 div#item-header div.generic-button,
 div#item-header a.button {
-    padding: 0 8px
-}
+  padding: 0 8px; }
 
 #sidebar .sidebar-activity-tabs ul li a {
-    padding-bottom: 8px;
-    padding-top: 4px;
-    text-decoration: none;
-}
+  padding-bottom: 8px;
+  padding-top: 4px;
+  text-decoration: none; }
 
 div#object-nav ul li a {
-    padding: 4px 6px 8px !important;
-    text-decoration: none;
-}
+  padding: 4px 6px 8px !important;
+  text-decoration: none; }
 
 div.activity-type-tabs li a {
-    padding: 4px 6px 8px !important;
-    text-decoration: none;
-}
+  padding: 4px 6px 8px !important;
+  text-decoration: none; }
 
 .loading a:before {
-    display: none !important
-}
+  display: none !important; }
 
 div.item-list-tabs ul li.loading a {
-    padding-top: 9px !important
-}
+  padding-top: 9px !important; }
 
 /* Stream Icons. no shorthand CSS to maintain hover effects */
 li#activity-all a:before {
-    content: "s"
-}
+  content: "s"; }
 
 li#activity-favorites a:before,
 .button.fav:before,
 .button.unfav:before {
-    content: "h"
-}
+  content: "h"; }
 
 li#activity-friends a:before {
-    content: "a"
-}
+  content: "a"; }
 
 li#activity-groups a:before,
 .widget_bp_groups_widget {
-    content: "f"
-}
+  content: "f"; }
 
 li#activity-links a:before,
 #nav-links:before {
-    content: "Q"
-}
+  content: "Q"; }
 
 li#activity-mentions a:before {
-    content: "#"
-}
+  content: "#"; }
 
 li#activity-following a,
 li#following-personal-li a:before {
-    content: "*"
-}
+  content: "*"; }
 
 .acomment-reply:before {
-    content: "w"
-}
+  content: "w"; }
 
 .delete-activity:before,
 .generic-button.is_friend a:before,
 .generic-button.pending_friend a:before {
-    content: "X"
-}
+  content: "X"; }
 
 .load-more a:before {
-	content: "s"
-}
+  content: "s"; }
 
 /* Group Icons */
 li#members-groups-li a:before {
-    content: "e"
-}
+  content: "e"; }
 
 li#forums-groups-li a:before {
-    content: '"'
-}
+  content: '"'; }
 
 li#admin-groups-li a:before,
 li#link-admin-personal-li a:before {
-    content: "i"
-}
+  content: "i"; }
 
 li#invite-groups-li a:before {
-    content: "A"
-}
+  content: "A"; }
 
 li#home-groups-li a:before,
 li#link-home-personal-li a:before {
-    content: "0"
-}
+  content: "0"; }
 
 li#nav-docs-groups-li a:before,
 #user-docs:before {
-    content: "L"
-}
+  content: "L"; }
+
 #bp-create-doc-button:before {
-    content: "C";
-    font-size: 165%;
-}
+  content: "C";
+  font-size: 165%; }
+
 li#nav-notifications-groups-li a:before {
-    content: "6"
-}
+  content: "6"; }
 
 /* Profile Icons  */
 #user-activity:before {
-    content: "s"
-}
+  content: "s"; }
 
 #user-xprofile:before {
-    content: "?"
-}
+  content: "?"; }
 
 #user-friends:before {
-    content: "a"
-}
+  content: "a"; }
 
 #user-groups:before {
-    content: "f"
-}
+  content: "f"; }
 
 #user-profile:before {
-    content: "?"
-}
+  content: "?"; }
 
 #user-links:before {
-    content: "P"
-}
+  content: "P"; }
 
 #user-messages:before,
 #nav-invite-anyone:before,
 #user-invite-anyone:before {
-    content: "A"
-}
+  content: "A"; }
 
 #user-forums:before {
-    content: '"'
-}
+  content: '"'; }
 
 #user-blogs:before,
 #user-sites:before {
-    content: "C"
-}
+  content: "C"; }
 
 li#activity-filter-select label:before {
-    content: "."
-}
+  content: "."; }
 
 a.send-message:before,
 #nav-invite-anyone:before {
-    content: "A"
-}
+  content: "A"; }
 
 a.friendship-button:before {
-    content: "a"
-}
+  content: "a"; }
 
 .follow-button a.follow:before {
-    content: "*"
-}
+  content: "*"; }
 
 div#post-mention a.mention:before {
-    content: "#"
-}
+  content: "#"; }
 
 #user-settings:before {
-    content: "i"
-}
+  content: "i"; }
 
 div#message p {
-    background-color: #FEFAEB;
-    border: 1px solid #F1F1F1;
-    border-radius: 4px 4px 4px 4px;
-    display: block;
-    font-size: 12px;
-    padding: 10px 15px;
-}
+  background-color: #FEFAEB;
+  border: 1px solid #F1F1F1;
+  border-radius: 4px 4px 4px 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px 15px; }
 
 div#message p:before {
-    content: "_"
-}
+  content: "_"; }
+
 /* BBPress */
 #nav-forums:before,
 #nav-forum:before {
-    content: '"'
-}
+  content: '"'; }
+
 #favorite-toggle:before {
-    content: "h";
-    top: 0;
-}
+  content: "h";
+  top: 0; }
+
 #subscription-toggle:before {
-    content: "A";
-    position: relative;
-    right: -9px;
-    top: 0;
-}
+  content: "A";
+  position: relative;
+  right: -9px;
+  top: 0; }
+
 #bbpress-forums .bbp-forums-list li a:before {
-    color: #999999;
-    content: "g";
-    text-shadow: 0 -1px 0 #E3E7E7;
-}
+  color: #999999;
+  content: "g";
+  text-shadow: 0 -1px 0 #E3E7E7; }
+
 .groups #item-buttons .group-button a:before {
-    content: "#";
-    font-size: 150%;
-    padding: 0 2px 0 0;
-}
+  content: "#";
+  font-size: 150%;
+  padding: 0 2px 0 0; }
+
 /* Main Menu Icons */
 .base-menu li ul li a:before {
-    content: none !important
-}
+  content: none !important; }
 
 /* Make sure items with an icon line up with non-icon items */
 #main-menu-wrap .icon-groups a,
@@ -376,82 +314,72 @@ div#message p:before {
 #main-menu-wrap .icon-forums,
 #main-menu-wrap .icon-links a,
 #main-menu-wrap .icon-sites a,
-#main-menu-wrap .icon-blogs a   {
-	margin-top: -5px;
-}
+#main-menu-wrap .icon-blogs a {
+  margin-top: -5px; }
 
 #main-menu-wrap .icon-groups a:before {
-    content: "f"
-}
+  content: "f"; }
 
 #main-menu-wrap .icon-members a:before {
-    content: "e"
-}
+  content: "e"; }
 
 #main-menu-wrap .icon-activity a:before {
-    content: "s"
-}
+  content: "s"; }
 
 #main-menu-wrap .icon-forums a:before {
-    content: '"'
-}
+  content: '"'; }
 
 #main-menu-wrap .icon-links a:before {
-    content: "Q"
-}
+  content: "Q"; }
 
 #main-menu-wrap .icon-sites a:before,
 #main-menu-wrap .icon-blogs a:before {
-    content: "C"
-}
+  content: "C"; }
+
 #bp-adminbar-notifications-menu a:before {
-    content: "6"
-}
+  content: "6"; }
 
 #bp-adminbar-account-menu a:before {
-    content: "a"
-}
+  content: "a"; }
 
 .login-form-link a:before {
-    content: "y"
-}
+  content: "y"; }
 
 #join-us-link a:before {
-    content: "w"
-}
+  content: "w"; }
+
 /* WooCommerce Icons */
 a.add_to_cart_button:before {
-	content: "$"
-}
+  content: "$"; }
+
 .product_type_variable:before {
-	content: "l" !important;
-}
+  content: "l" !important; }
+
 .coupon:before {
-	 color: inherit;
-    font-family: "iconsweetsRegular";
-    font-size: 180%;
-    font-weight: normal;
-    padding-right: 2px;
-    position: relative;
-    text-transform: none;
-    top: 2px;
-	content: "(";
-	float: left;
-	opacity: 0.7;
-}
+  color: inherit;
+  font-family: "iconsweetsRegular";
+  font-size: 180%;
+  font-weight: normal;
+  padding-right: 2px;
+  position: relative;
+  text-transform: none;
+  top: 2px;
+  content: "(";
+  float: left;
+  opacity: 0.7; }
+
 /* BuddyPress Links Icons */
 .link-home h2 a:before {
-    content: "Q";
-    font-size: 100%;
-    opacity: 0.6;
-}
+  content: "Q";
+  font-size: 100%;
+  opacity: 0.6; }
+
 div.link-vote-panel div.clickers a.up {
-	background: transparent;
-}
+  background: transparent; }
+
 div.link-vote-panel div.clickers a.up:before {
-	color: inherit;
-    height: 20px;
-    position: relative;
-    width: 20px;
-	content: "[";
-}
+  color: inherit;
+  height: 20px;
+  position: relative;
+  width: 20px;
+  content: "["; }
