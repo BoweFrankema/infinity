@@ -3,7 +3,7 @@
 
   *, *:before, *:after { @include box-sizing(border-box); }
   html { font-size: 62.5%; }
-  body { font-family: $bodyFontFamily; font-weight: $bodyFontWeight; font-style: $bodyFontStyle; line-height: 1; color: $bodyFontColor; position: relative; -webkit-font-smoothing: $fontSmoothing; }
+  body { font-family: $bodyFontFamily; font-weight: $bodyFontWeight; font-style: $bodyFontStyle; line-height: 1; color: $font-color; position: relative; -webkit-font-smoothing: $fontSmoothing; }
 
 /* Links ---------------------- */
 

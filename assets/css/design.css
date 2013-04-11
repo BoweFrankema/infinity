@@ -1,19 +1,20 @@
-body {
-  background: url("../images/design/bg.png") repeat white; }
-
+/* line 2, ../sass/design.scss */
 #wrapper {
   margin-top: 20px;
   margin-bottom: 20px; }
 
+/* line 8, ../sass/design.scss */
 h2.page-title a, h2.post-title a {
   margin-bottom: 0;
   margin-top: 0; }
 
+/* line 14, ../sass/design.scss */
 h1.page-title a, h1.post-title a {
   color: inherit;
   margin-bottom: 0;
   margin-top: 0; }
 
+/* line 20, ../sass/design.scss */
 a {
   color: #3facb4;
   text-decoration: none;
@@ -21,26 +22,32 @@ a {
   -moz-transition: color 0.1s;
   -o-transition: color 0.1s;
   transition: color 0.1s; }
+  /* line 25, ../sass/design.scss */
   a:hover {
-    color: #32888e;
+    color: #2b767b;
     text-decoration: none; }
+  /* line 30, ../sass/design.scss */
   a:focus {
-    color: #32888e; }
+    color: #2b767b; }
 
 /* Global Padding */
+/* line 37, ../sass/design.scss */
 #content, #sidebar, #content-full, #footer, #header {
   padding: 30px; }
 
 /* Global Negative Padding */
+/* line 43, ../sass/design.scss */
 #bbpress-forums, div.bbp-breadcrumb, #item-body form#whats-new-form, div.item-list-tabs, #powered-by, #header #site-title, .negative {
   margin-left: -30px;
   margin-right: -30px;
   padding-left: 30px;
   padding-right: 30px; }
 
+/* line 47, ../sass/design.scss */
 .main-wrap {
   background: #FFF; }
 
+/* line 51, ../sass/design.scss */
 #header {
   background: url("../images/design/header-background.jpg") no-repeat scroll transparent;
   -webkit-border-radius: 5px 5px 0px 0px;
@@ -50,6 +57,7 @@ a {
   border-radius: 5px 5px 0px 0px;
   padding-bottom: 35px;
   padding-top: 60px; }
+  /* line 56, ../sass/design.scss */
   #header:before {
     -webkit-border-radius: 5px 5px 0px 0px;
     -moz-border-radius: 5px 5px 0px 0px;
@@ -58,6 +66,7 @@ a {
     border-radius: 5px 5px 0px 0px; }
 
 /* Also add a border radius to our pseudo element for header background */
+/* line 63, ../sass/design.scss */
 h1#site-title, div#site-title {
   border-bottom: 2px solid #DDDDDD;
   -webkit-border-radius: 0px 12px 12px 0px;
@@ -69,36 +78,41 @@ h1#site-title, div#site-title {
   border-top: 1px solid #D0CECE;
   padding: 10px 30px 6px; }
 
+/* line 71, ../sass/design.scss */
+#site-description {
+  color: #898989; }
+
 /* Global CSS3 Stuff */
+/* line 77, ../sass/design.scss */
 .main-menu, .top-menu, .top-wrap .sub-menu, .item-list-tabs, thead:first-child tr th, thead:first-child tr td, .base-menu ul ul {
-  background-color: #222222;
+  background-color: #232323;
   background-repeat: repeat-x;
   padding-left: 20px;
   padding-right: 20px;
-  border-bottom: 2px solid #628FAA;
-  border-top: 2px solid #525151;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #222222));
-  background: -webkit-linear-gradient(center top, #333333, #222222);
-  background: -moz-linear-gradient(center top, #333333, #222222);
-  background: -o-linear-gradient(center top, #333333, #222222);
-  background: linear-gradient(center top, #333333, #222222);
+  border-bottom: 2px solid #303030;
+  border-top: 1px solid #3d3d3d;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset; }
 
+/* line 87, ../sass/design.scss */
 #footer {
   padding: 0 30px 5px; }
+  /* line 88, ../sass/design.scss */
   #footer .widget h4 {
     border-bottom: 1px solid #3E3C3C;
-    color: #E0E0E0; }
+    color: white; }
 
+/* line 95, ../sass/design.scss */
 #powered-by {
   border-top: 1px solid #434343; }
 
+/* line 99, ../sass/design.scss */
 .footer-widget {
   padding-bottom: 10px;
   padding-top: 20px; }
 
+/* line 104, ../sass/design.scss */
 .author-box, .category-box, .tag-box, .info-box, #sidebar, .activity-inner, div.activity-comments form.ac-form, .postthumb img, span.activity, h1#site-title, div#site-title, .fluid-width-video-wrapper {
   background-color: #FFF;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f9f9f9));
@@ -113,11 +127,13 @@ h1#site-title, div#site-title {
   border: 0px; }
 
 /* Menus */
+/* line 114, ../sass/design.scss */
 .base-menu ul a, div.item-list-tabs ul li a {
-  color: #BFBFBF;
+  color: #f9f9f9;
   font-weight: 400;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
+/* line 120, ../sass/design.scss */
 .main-menu {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -125,6 +141,7 @@ h1#site-title, div#site-title {
   -o-border-radius: 6px;
   border-radius: 6px;
   padding: 5px; }
+  /* line 123, ../sass/design.scss */
   .main-menu ul a {
     font-weight: 500;
     -webkit-border-radius: 6px;
@@ -134,29 +151,37 @@ h1#site-title, div#site-title {
     border-radius: 6px;
     margin-right: 10px; }
 
+/* line 131, ../sass/design.scss */
 #main-menu-wrap .sub-menu {
   margin: 8px 0 0; }
 
+/* line 135, ../sass/design.scss */
 .base-menu .sub-menu {
   padding-left: 0px !important; }
 
+/* line 139, ../sass/design.scss */
 .widget {
   margin: 0 0 20px; }
+  /* line 141, ../sass/design.scss */
   .widget h4 {
     border-bottom: 1px solid #EDEDED;
     padding-bottom: 10px; }
 
 /* Footer */
+/* line 149, ../sass/design.scss */
 #footer .widget {
-  color: #BFBFBF;
+  color: #f9f9f9;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
+/* line 154, ../sass/design.scss */
 #category-description, #tag-description {
   padding: 10px 10px 10px 0; }
 
+/* line 158, ../sass/design.scss */
 .comment-container {
   padding: 10px; }
 
+/* line 162, ../sass/design.scss */
 .children .comment-container {
   background: transparent;
   -webkit-box-shadow: 0;
@@ -164,6 +189,7 @@ h1#site-title, div#site-title {
   box-shadow: 0; }
 
 /* BuddyPress */
+/* line 169, ../sass/design.scss */
 img.avatar, ul.item-list li img.avatar, .fluid-width-video-wrapper {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -176,21 +202,25 @@ img.avatar, ul.item-list li img.avatar, .fluid-width-video-wrapper {
   margin-left: 0;
   padding: 0; }
 
+/* line 177, ../sass/design.scss */
 .activity-list .activity-content .activity-inner, .activity-list .activity-content blockquote {
   padding: 20px; }
 
+/* line 183, ../sass/design.scss */
 div.item-options {
   font-size: 8.8px;
   margin-bottom: -16px;
   margin-top: -16px; }
+/* line 188, ../sass/design.scss */
 div.item-list-tabs ul li a span {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  color: #5ABCF8; }
+  color: #f9f9f9; }
 
+/* line 195, ../sass/design.scss */
 #subnav ul {
   background: none;
   border-bottom: 1px solid #FFFFFF;
@@ -198,20 +228,24 @@ div.item-list-tabs ul li a span {
   -moz-box-shadow: none;
   box-shadow: none;
   border-top: 0px; }
+/* line 201, ../sass/design.scss */
 #subnav.item-list-tabs ul li a {
-  color: #787676;
+  color: #acacac;
   font-weight: 500;
   text-shadow: none; }
 
+/* line 208, ../sass/design.scss */
 div#subnav.item-list-tabs {
   border-bottom: 1px solid #E8E8E8;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
 
+/* line 213, ../sass/design.scss */
 a.loading, li.loading a {
   background-image: url(../images/design/ajax-loader.gif) !important; }
 
+/* line 217, ../sass/design.scss */
 span.activity {
   border: 1px solid #EDEDED;
   -webkit-border-radius: 3px;
@@ -222,25 +256,28 @@ span.activity {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-  color: #aaaaaa;
+  color: #c6c6c6;
   font-size: 80%;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: -6px;
   padding: 0 5px; }
 
+/* line 229, ../sass/design.scss */
 .footer-wrap {
   background: none repeat scroll 0 0 #2F2F2F;
   border-top: 1px solid #454545;
-  color: #DDDDDD; }
+  color: #c6c6c6; }
 
+/* line 235, ../sass/design.scss */
 #copyright-info {
   text-align: right; }
 
 /* ======== */
 /* ! Misc   */
 /* ======== */
+/* line 244, ../sass/design.scss */
 thead:first-child tr th, thead:first-child tr td {
   padding-left: 10px;
   padding-right: 10px;
-  color: #DDD; }
+  color: #939393; }

@@ -17,12 +17,12 @@
     font-family: $headerFontFamily;
     font-weight: $headerFontWeight;
     font-style: $headerFontStyle;
-    color: $headerFontColor;
+    color: $header-color;
     text-rendering: optimizeLegibility;
     line-height: 1.1;
     margin-bottom: ms(0);
     margin-top: ms(0);
-    small { font-size: 60%; color: lighten($headerFontColor, 30%); line-height: 0; }
+    small { font-size: 60%; color: lighten($header-color, 30%); line-height: 0; }
   }
 
   h1 { font-size: ms(5); }
@@ -46,7 +46,7 @@ h1 {
     margin: 0;
   }
   &#category-title span, &#tag-title span {
-    color: lighten($headerFontColor, 30%);
+    color: lighten($header-color, 30%);
     font-size: 120%;
   }
 }
@@ -85,7 +85,7 @@ h2 .post-edit-link {
   em, i { font-style: italic; line-height: inherit; }
   strong, b { font-weight: bold; line-height: inherit; }
   small { font-size: 60%; line-height: inherit; }
-  code { font-weight: bold; background: $highlightColor; }
+  code { font-weight: bold; background: $light-color; }
 
   /* Lists ---------------------- */
   ul, ol, dl { font-size: ms(0); line-height: 1.6; margin-bottom: ms(1); list-style-position: outside; }
@@ -117,13 +117,13 @@ h2 .post-edit-link {
   }
 
   /* Blockquotes ---------------------- */
-  blockquote, blockquote p { line-height: 1.5; color: lighten($headerFontColor, 30%); }
+  blockquote, blockquote p { line-height: 1.5; color: lighten($header-color, 30%); }
   blockquote { margin: 0 0 ms(1); padding: 9px 20px 0 19px; border-#{$defaultFloat}: 1px solid #ddd;
-    cite { display: block; font-size: ms(0) - 1; color: lighten($headerFontColor, 20%);
+    cite { display: block; font-size: ms(0) - 1; color: lighten($header-color, 20%);
       &:before { content: "\2014 \0020"; }
-      a, a:visited { color: lighten($headerFontColor, 20%); }
+      a, a:visited { color: lighten($header-color, 20%); }
     }
   }
 
-  abbr, acronym { text-transform: uppercase; font-size: 90%; color: $headerFontColor; border-bottom: 1px solid #ddd; cursor: help; }
+  abbr, acronym { text-transform: uppercase; font-size: 90%; color: $header-color; border-bottom: 1px solid #ddd; cursor: help; }
   abbr { text-transform: none; }

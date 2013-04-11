@@ -4,30 +4,37 @@
 
 // Colors Settings
 
-$mainColor: #3FACB4 !default;
-$secondaryColor: #e9e9e9 !default;
-$alertColor: #c60f13 !default;
-$successColor: #5da423 !default;
-$txtColor: #222 !default;
-$highlightColor: #ffff99 !default;
-$black: #000 !default;
-$white: #fff !default;
-$headerFontColor: #444 !default;
-$bodyFontColor: $txtColor !default;
+$main-color: #3FACB4 !default;
+$secondary-color: #e9e9e9 !default;
+$font-color: #c60f13 !default;
+$dark-color: #232323 !default;
+$light-color: #F9F9F9 !default;
+
+// Borders
+
+$main-bg: #F9F9F9 !default;
+$secondary-bg: #EFEFEF !default;
+$darkbg: #232323 !default;
+$lightbg: #F4F4F4 !default;
+
+$dark-border-top:  lighten($dark-color, 10%)                  !default;
+$dark-border-bottom:  lighten($dark-color, 5%)                  !default;
+
+
 
 // lighten main
-$mainColor5l: lighten($mainColor, 5%);
-$mainColor10l: lighten($mainColor, 10%);
-$mainColor20l: lighten($mainColor, 20%);
-$mainColor30l: lighten($mainColor, 30%);
-$mainColor40l: lighten($mainColor, 40%);
+$main-color5l: lighten($main-color, 5%);
+$main-color10l: lighten($main-color, 10%);
+$main-color20l: lighten($main-color, 20%);
+$main-color30l: lighten($main-color, 30%);
+$main-color40l: lighten($main-color, 40%);
 
 // lighten main
-$mainColor5d: darken($mainColor, 5%);
-$mainColor10d: darken($mainColor, 10%);
-$mainColor20d: darken($mainColor, 20%);
-$mainColor30d: darken($mainColor, 30%);
-$mainColor40d: darken($mainColor, 40%);
+$main-color5d: darken($main-color, 5%);
+$main-color10d: darken($main-color, 10%);
+$main-color20d: darken($main-color, 20%);
+$main-color30d: darken($main-color, 30%);
+$main-color40d: darken($main-color, 40%);
 
 // Font Settings
 $FontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
@@ -37,6 +44,7 @@ $importantModNum: 44px !default;
 $base-size: $baseFontSize $importantModNum;
 $fontSmoothing: antialiased !default;
 
+$header-color: $dark-color !default;
 $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $headerFontWeight: bold !default;
 $headerFontStyle: normal !default;
@@ -98,4 +106,23 @@ $defaultOpposite: right !default; // Change this to 'left' for right-to-left lan
   @return "invalid";
 }
 
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
 
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
+
+@mixin font-icon {
+  font-weight: normal;
+  font-family: "iconsweetsRegular";
+  color: inherit;
+  padding-right: 2px;
+  font-size: 130%;
+  position: relative;
+  top: 2px;
+  text-transform: none;
+}
+
+// @include box-emboss(0.8, 0.05);

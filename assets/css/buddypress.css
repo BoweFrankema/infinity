@@ -1,67 +1,70 @@
-/*
-----------------------------------------------------------------
-BuddyPress Default Styling.
-
-You can disable the css in this file by adding the following code to your child theme config/infinity.ini file
-
-infinity-bp-support = off
---------------------------------------------------------------*/
 /* ============================== */
 /* BuddyPress Infinity Tweaks  */
 /* ============================== */
+/* line 5, ../sass/buddypress.scss */
 span.highlight, span.activity, div#message p, .generic-button, .activity-list div.activity-meta a {
   display: inline-block;
   text-decoration: none;
+  font: bold 11px/12px;
   padding: 3px 6px; }
 
+/* line 11, ../sass/buddypress.scss */
 .activity-list .activity-header a:first-child {
   padding: 0px; }
 
+/* line 12, ../sass/buddypress.scss */
 .activity-header p {
   margin-bottom: 0px; }
 
+/* line 13, ../sass/buddypress.scss */
 div#message p {
   font-weight: bold;
   padding-left: 22px; }
 
+/* line 17, ../sass/buddypress.scss */
 #sidebar div#message p {
   padding-left: 10px; }
 
+/* line 20, ../sass/buddypress.scss */
 span.activity {
-  background: #F9F9F9;
+  background: #f4f4f4;
   font-weight: normal;
   margin-top: 6px;
   font-size: 85%; }
 
+/* line 26, ../sass/buddypress.scss */
 .activity-read-more {
   margin-left: 5px; }
 
 /* > Item Headers (Profiles, Groups)
 --------------------------------------------------------------*/
+/* line 30, ../sass/buddypress.scss */
 div#item-header {
   margin-bottom: 15px;
   overflow: hidden; }
 
+/* line 34, ../sass/buddypress.scss */
 div#item-header div#item-header-content {
   margin-left: 170px; }
 
+/* line 35, ../sass/buddypress.scss */
 div#item-header h2 {
   margin: 0 0 15px 0; }
 
-div#item-header h2 a {
-  text-decoration: none;
-  color: #777; }
-
+/* line 36, ../sass/buddypress.scss */
 div#item-header img.avatar {
   float: left;
   margin: 0 15px 25px 0; }
 
+/* line 40, ../sass/buddypress.scss */
 .achievements div#item-header img.avatar {
   max-width: 93%; }
 
+/* line 41, ../sass/buddypress.scss */
 div#item-header h2 {
   margin-bottom: 5px; }
 
+/* line 42, ../sass/buddypress.scss */
 div#item-header span.activity, div#item-header h2 span.highlight {
   vertical-align: middle;
   font-size: 85%;
@@ -69,13 +72,15 @@ div#item-header span.activity, div#item-header h2 span.highlight {
   line-height: 170%;
   margin-bottom: 7px; }
 
+/* line 49, ../sass/buddypress.scss */
 div#item-header h2 span.highlight {
   font-size: 11.5px;
   font-weight: bold; }
 
+/* line 53, ../sass/buddypress.scss */
 div#item-header h2 span.highlight span {
-  background: #444444;
-  color: #FFFFFF;
+  background: #232323;
+  color: #f9f9f9;
   cursor: pointer;
   display: none;
   font-size: 85%;
@@ -87,208 +92,253 @@ div#item-header h2 span.highlight span {
   top: -1px;
   vertical-align: middle; }
 
+/* line 67, ../sass/buddypress.scss */
 div#item-header div#item-meta {
   font-size: 85%;
-  color: #777;
+  color: #acacac;
   padding-bottom: 10px;
   overflow: hidden;
   margin: 15px 0 5px 0; }
 
+/* line 74, ../sass/buddypress.scss */
 div#item-header div#item-actions {
   float: right;
   width: 20%;
   margin: 0 0 15px 15px;
   text-align: right; }
 
+/* line 80, ../sass/buddypress.scss */
 div#item-header div#item-actions h3 {
   font-size: 100%;
   margin: 0 0 5px 0; }
 
+/* line 84, ../sass/buddypress.scss */
 div#item-header ul {
   overflow: hidden;
   margin-bottom: 15px; }
 
+/* line 88, ../sass/buddypress.scss */
 div#item-header ul h5, div#item-header ul span, div#item-header ul hr {
   display: none; }
 
+/* line 89, ../sass/buddypress.scss */
 div#item-header ul li {
   float: right;
   list-style: none outside none; }
 
+/* line 93, ../sass/buddypress.scss */
 div#item-header ul img.avatar, div#item-header ul.avatars img.avatar {
   width: 30px;
   height: 30px;
   margin: 2px; }
 
+/* line 98, ../sass/buddypress.scss */
 div#item-header div.generic-button, div#item-header a.button {
   float: left;
   font-size: 85%;
   margin: 10px 10px 0 0; }
 
+/* line 103, ../sass/buddypress.scss */
 div#item-header div#message.info {
   line-height: 80%; }
 
+/* line 104, ../sass/buddypress.scss */
 div#item-header div#message.info p {
-  background: #f9f9f9; }
+  background: #f4f4f4; }
 
 /* > Item Lists (Activity, Friend, Group lists)
 --------------------------------------------------------------*/
+/* line 107, ../sass/buddypress.scss */
 ul.item-list {
   padding: 0;
   width: 100%; }
 
+/* line 111, ../sass/buddypress.scss */
 ul.item-list li {
   border-bottom: 1px solid #EAEAEA;
   list-style: none outside none;
   padding: 20px 0 10px;
-  position: relative;
-  margin-bottom: 30px;
-  margin-top: 30px; }
+  position: relative; }
 
+/* line 117, ../sass/buddypress.scss */
 ul.single-line li {
   border: none; }
 
+/* line 118, ../sass/buddypress.scss */
 ul.item-list li img.avatar {
   float: left;
   margin: 0 10px 10px 0; }
 
+/* line 122, ../sass/buddypress.scss */
 .widget img.avatar {
   float: left; }
 
+/* line 125, ../sass/buddypress.scss */
 ul.item-list li div.item-title, ul.item-list li h4 {
   font-weight: normal;
   width: 100%;
   margin: 0; }
 
+/* line 130, ../sass/buddypress.scss */
 ul.item-list li div.item-title span {
   font-size: 100%;
-  color: #999; }
+  color: #939393; }
 
+/* line 134, ../sass/buddypress.scss */
 ul.item-list li div.item-desc {
   font-size: 85%;
   margin: 10px 0 0 64px;
   width: 68%; }
 
+/* line 139, ../sass/buddypress.scss */
 ul.item-list li div.action {
   position: absolute;
   top: 15px;
   right: 0;
   text-align: right; }
 
+/* line 145, ../sass/buddypress.scss */
 ul.item-list li div.meta {
   margin-top: 10px;
-  color: #888;
+  color: #c6c6c6;
   font-size: 85%; }
 
+/* line 150, ../sass/buddypress.scss */
 #sidebar .item-meta {
   position: relative; }
 
+/* line 151, ../sass/buddypress.scss */
 .item-avatar {
   float: left; }
 
+/* line 152, ../sass/buddypress.scss */
 ul.item-list li h5 span.small {
   font-weight: normal;
   font-size: 85%; }
 
 /* > Item Tabs
 --------------------------------------------------------------*/
+/* line 158, ../sass/buddypress.scss */
 div.item-list-tabs {
   min-height: 37px;
   position: relative;
   clear: both; }
 
+/* line 163, ../sass/buddypress.scss */
 .item-list-tabs {
-  background: none repeat scroll 0 0 #222222; }
+  background: none repeat scroll 0 0 #232323; }
 
+/* line 164, ../sass/buddypress.scss */
 div.item-list-tabs ul {
   width: 100%;
   overflow: hidden;
   margin: 0;
   padding: 0; }
 
+/* line 170, ../sass/buddypress.scss */
 div.item-list-tabs ul li {
   float: left;
   list-style: none; }
 
+/* line 174, ../sass/buddypress.scss */
 div.item-list-tabs ul li a:hover {
   color: #DDD;
   background: #000; }
 
+/* line 178, ../sass/buddypress.scss */
 div.item-list-tabs ul li.last {
-  color: #BFBDBD;
+  color: #e0e0e0;
   float: right;
   font-size: 85%;
   margin-bottom: -4px;
   text-transform: inherit; }
 
+/* line 185, ../sass/buddypress.scss */
 div.item-list-tabs ul li.last label {
   display: inline; }
 
+/* line 186, ../sass/buddypress.scss */
 div.item-list-tabs ul li.last select {
   display: inline-block;
   margin-left: 8px;
   margin-top: 4px; }
 
+/* line 191, ../sass/buddypress.scss */
 li#activity-filter-select label {
   display: inline-block; }
 
+/* line 192, ../sass/buddypress.scss */
 div.item-list-tabs ul li a, div.item-list-tabs ul li span {
   display: block;
   padding: 8px 10px;
   text-decoration: none; }
 
+/* line 197, ../sass/buddypress.scss */
 div.item-list-tabs ul li span {
   color: #777777; }
 
+/* line 198, ../sass/buddypress.scss */
 div.item-list-tabs ul li a span {
   display: inline;
   padding: 0;
   color: inherit; }
 
+/* line 203, ../sass/buddypress.scss */
 div.item-list-tabs ul li a span {
   background: none repeat scroll 0 0 #333333;
-  color: #999999;
+  color: #acacac;
   display: inline;
   font-size: 75%;
   margin-left: 2px;
   padding: 2px 5px; }
 
+/* line 211, ../sass/buddypress.scss */
 div.item-list-tabs ul li.selected a, div.item-list-tabs ul li.selected a, div.item-list-tabs ul li.current a {
-  background: none repeat scroll 0 0 #000;
-  color: #DDDDDD;
+  background: black;
+  color: lightgrey;
   font-weight: bold; }
 
+/* line 216, ../sass/buddypress.scss */
 div.item-list-tabs ul li.selected a span, div.item-list-tabs ul li.current a span, div.item-list-tabs ul li a:hover span {
   background-color: #444444; }
 
+/* line 217, ../sass/buddypress.scss */
 div.item-list-tabs ul li.selected a span, div.item-list-tabs ul li.current a span {
   background-color: #555555; }
 
+/* line 218, ../sass/buddypress.scss */
 div.item-list-tabs ul li.loading a {
   background-position: 88% 50%;
   padding-left: 25px !important; }
 
 /* Subnav */
+/* line 222, ../sass/buddypress.scss */
 div#subnav.item-list-tabs {
   background: transparent; }
 
+/* line 223, ../sass/buddypress.scss */
 div.item-list-tabs#subnav ul li {
   margin-top: 0; }
 
+/* line 224, ../sass/buddypress.scss */
 div#subnav.item-list-tabs ul li a {
-  color: #999999; }
+  color: #939393; }
 
+/* line 225, ../sass/buddypress.scss */
 div#subnav.item-list-tabs ul li.current a {
   background: transparent;
-  color: #444444; }
+  color: #232323; }
 
+/* line 229, ../sass/buddypress.scss */
 div#subnav.item-list-tabs ul li a:hover {
-  color: #222;
+  color: black;
   background: transparent; }
 
+/* line 233, ../sass/buddypress.scss */
 div.item-list-tabs#object-nav {
   margin-top: 0; }
 
+/* line 234, ../sass/buddypress.scss */
 div#subnav.item-list-tabs {
   border-bottom: 1px solid #E8E8E8;
   border-top: 0 solid;
@@ -298,131 +348,158 @@ div#subnav.item-list-tabs {
 
 /* > Item Body
 --------------------------------------------------------------*/
+/* line 243, ../sass/buddypress.scss */
 .item-body {
   margin: 20px 0; }
 
 /* > Directories (Members, Groups, Blogs, Forums)
 --------------------------------------------------------------*/
+/* line 246, ../sass/buddypress.scss */
 div.dir-search {
   left: 65%;
   margin-top: -60px;
   position: relative;
   width: 51%; }
 
+/* line 252, ../sass/buddypress.scss */
 .dir-form {
   margin-bottom: 30px; }
 
+/* line 253, ../sass/buddypress.scss */
 div.dir-search input[type=text] {
   display: inline-block;
   margin-right: 10px; }
 
+/* line 257, ../sass/buddypress.scss */
 div.dir-search label {
   display: inline-block; }
 
+/* line 258, ../sass/buddypress.scss */
 #content .item-title a {
   font-size: 120%; }
 
+/* line 259, ../sass/buddypress.scss */
 .dir-form h3 .button {
   margin-bottom: 0;
   margin-top: 0;
   padding: 2px 12px; }
 
+/* line 264, ../sass/buddypress.scss */
 .dir-form .info-box {
   float: left;
   margin-top: 10px; }
 
 /* > Pagination
 --------------------------------------------------------------*/
+/* line 270, ../sass/buddypress.scss */
 div.pagination#user-pag, .friends div.pagination, .mygroups div.pagination, .myblogs div.pagination, noscript div.pagination {
-  background: #f8f8f8;
+  background: #e0e0e0;
   border: none;
   padding: 8px 15px; }
 
+/* line 275, ../sass/buddypress.scss */
 div.pagination .pag-count {
   float: none;
   line-height: 5px;
   font-style: italic; }
 
+/* line 276, ../sass/buddypress.scss */
 div.pagination .pagination-links {
   float: right;
   margin-top: -10px; }
 
+/* line 280, ../sass/buddypress.scss */
 div.pagination .pagination-links span, div.pagination .pagination-links a {
   padding: 0 5px; }
 
+/* line 283, ../sass/buddypress.scss */
 div.pagination .pagination-links a:hover {
   font-weight: bold; }
 
+/* line 284, ../sass/buddypress.scss */
 div#pag-bottom {
   margin-top: 0; }
 
+/* line 285, ../sass/buddypress.scss */
 div.item-options {
-  color: #73C1E6;
+  color: #c6c6c6;
   font-size: 80%;
   font-weight: bold;
   text-transform: uppercase; }
 
+/* line 291, ../sass/buddypress.scss */
 div.item-options a {
   padding-bottom: 2px;
   padding-top: 2px; }
 
+/* line 295, ../sass/buddypress.scss */
 div.item-avatar img {
   display: block;
   float: left;
   margin: 5px 5px 5px 0; }
 
+/* line 300, ../sass/buddypress.scss */
 .avatar-block {
   overflow: hidden; }
 
 /* > Error / Success Messages
 --------------------------------------------------------------*/
+/* line 303, ../sass/buddypress.scss */
 div#message {
   margin: 15px 0; }
 
+/* line 304, ../sass/buddypress.scss */
 div#message.updated {
   clear: both; }
 
+/* line 305, ../sass/buddypress.scss */
 div#message p {
   padding: 10px 15px;
   font-size: 85%;
   display: block; }
 
 /* Buttons that are disabled */
+/* line 311, ../sass/buddypress.scss */
 div.pending a, a.disabled {
-  border-color: #eee;
-  color: #bbb;
+  color: #c6c6c6;
   cursor: default; }
 
+/* line 315, ../sass/buddypress.scss */
 div.pending a:hover, a.disabled:hover {
-  border-color: #eee;
-  color: #bbb; }
+  color: lightgrey; }
 
+/* line 318, ../sass/buddypress.scss */
 div.accept, div.reject {
   float: left;
   margin-left: 10px; }
 
+/* line 322, ../sass/buddypress.scss */
 ul.button-nav {
   padding-left: 0px;
   clear: both;
   height: 45px; }
 
+/* line 327, ../sass/buddypress.scss */
 ul.button-nav li {
   list-style: none; }
 
+/* line 330, ../sass/buddypress.scss */
 ul.button-nav li a {
   float: left;
   margin: 0 10px 10px 0;
   padding: 8px 10px;
   font-weight: bold; }
 
+/* line 336, ../sass/buddypress.scss */
 ul.button-nav li.current a {
-  background: none repeat scroll 0 0 #EFEFEF;
-  border: 1px solid #DDDDDD;
+  background: #f4f4f4;
+  border: 1px solid #c6c6c6;
   border-radius: 3px 3px 3px 3px;
   margin-bottom: 20px; }
 
 /* > AJAX Loaders
 --------------------------------------------------------------*/
+/* line 344, ../sass/buddypress.scss */
 .ajax-loader {
   background-image: url(../images/buddypress/ajax-loader.gif) !important;
   background-position: 95% 50% !important;
@@ -430,6 +507,7 @@ ul.button-nav li.current a {
   padding-right: 25px !important;
   display: none; }
 
+/* line 351, ../sass/buddypress.scss */
 a.loading, li.loading a, #object-nav a.loading, #object-nav li.loading {
   background-image: url(../images/buddypress/ajax-loader.gif) !important;
   background-position: 5% 50% !important;
@@ -438,213 +516,267 @@ a.loading, li.loading a, #object-nav a.loading, #object-nav li.loading {
 
 /* > Input Forms
 --------------------------------------------------------------*/
+/* line 359, ../sass/buddypress.scss */
 form.standard-form #basic-details-section input[type=password], form.standard-form #blog-details-section input#signup_blog_url {
   width: 35%; }
 
+/* line 360, ../sass/buddypress.scss */
 form.standard-form#signup_form input[type=text], form.standard-form#signup_form textarea {
   width: 85%; }
 
+/* line 361, ../sass/buddypress.scss */
 form.standard-form#signup_form div.submit {
   float: right; }
 
+/* line 362, ../sass/buddypress.scss */
 div#signup-avatar img {
   margin: 0 15px 10px 0; }
 
+/* line 363, ../sass/buddypress.scss */
 form.standard-form textarea {
   width: 75%;
   height: 120px; }
 
+/* line 367, ../sass/buddypress.scss */
 form.standard-form textarea#message_content {
   height: 200px; }
 
+/* line 368, ../sass/buddypress.scss */
 form.standard-form#send-reply textarea {
   width: 97.5%; }
 
+/* line 369, ../sass/buddypress.scss */
 form.standard-form p.description {
-  color: #888888;
+  color: #acacac;
   font-size: 85%;
   font-style: italic;
   margin: -5px 0 15px; }
 
+/* line 375, ../sass/buddypress.scss */
 form.standard-form div.submit {
   padding: 15px 0;
   clear: both; }
 
+/* line 379, ../sass/buddypress.scss */
 form.standard-form div.submit input {
   margin-right: 15px; }
 
+/* line 380, ../sass/buddypress.scss */
 form.standard-form div.radio ul {
   margin: 10px 0 15px 38px;
   list-style: disc; }
 
+/* line 384, ../sass/buddypress.scss */
 form.standard-form div.radio ul li {
   margin-bottom: 5px; }
 
+/* line 385, ../sass/buddypress.scss */
 form.standard-form a.clear-value {
   display: block;
   margin-top: 5px;
   outline: none; }
 
+/* line 390, ../sass/buddypress.scss */
 form.standard-form #basic-details-section, form.standard-form #blog-details-section, form.standard-form #profile-details-section {
   float: left;
   width: 48%; }
 
+/* line 394, ../sass/buddypress.scss */
 form.standard-form #profile-details-section {
   float: right; }
 
+/* line 395, ../sass/buddypress.scss */
 form.standard-form #blog-details-section {
   clear: left; }
 
+/* line 396, ../sass/buddypress.scss */
 form.standard-form input:focus, form.standard-form textarea:focus, form.standard-form select:focus {
-  background: #fafafa;
-  color: #555; }
+  background: #c1c1c1;
+  color: #232323; }
 
+/* line 400, ../sass/buddypress.scss */
 form#send-invite-form {
   margin-top: 20px; }
 
+/* line 401, ../sass/buddypress.scss */
 div#invite-list {
   height: 400px;
   overflow: scroll;
   padding: 5px;
-  background: #f5f5f5;
+  background: #dbdbdb;
   width: 160px;
   border: 1px solid #e4e4e4;
   margin: 10px 0; }
 
+/* line 410, ../sass/buddypress.scss */
 #invite-list ul {
   padding: 0; }
 
+/* line 413, ../sass/buddypress.scss */
 #invite-list ul li {
   list-style: none; }
 
+/* line 416, ../sass/buddypress.scss */
 .action .button {
   padding: 3px 8px;
   font-size: 75%; }
 
 /* > Data Tables
 --------------------------------------------------------------*/
+/* line 422, ../sass/buddypress.scss */
 .profile-fields {
   border: 0 none;
   font-size: inherit; }
 
+/* line 426, ../sass/buddypress.scss */
 table tr td.thread-info p {
   margin: 0; }
 
+/* line 427, ../sass/buddypress.scss */
 table tr td.thread-info p.thread-excerpt {
-  color: #888;
+  color: #b9b9b9;
   font-size: 85%;
   margin-top: 3px; }
 
+/* line 432, ../sass/buddypress.scss */
 div#sidebar table td, table.forum td {
   text-align: center; }
 
+/* line 433, ../sass/buddypress.scss */
 table tr.alt {
   background: #f9f9f9; }
 
+/* line 434, ../sass/buddypress.scss */
 table.notification-settings {
   margin-bottom: 20px;
   text-align: left; }
 
+/* line 438, ../sass/buddypress.scss */
 table.notification-settings th.icon, table.notification-settings td:first-child {
   display: none; }
 
+/* line 439, ../sass/buddypress.scss */
 table.notification-settings th.title {
   width: 80%; }
 
+/* line 440, ../sass/buddypress.scss */
 table.notification-settings .yes, table.notification-settings .no {
   width: 40px;
   text-align: center; }
 
+/* line 444, ../sass/buddypress.scss */
 table tr.alt {
   background: #fbfbfb; }
 
+/* line 445, ../sass/buddypress.scss */
 table.forum tr > td:first-child, table.forum tr > th:first-child {
   padding-left: 20px; }
 
+/* line 446, ../sass/buddypress.scss */
 .forums .pagination {
   padding: 10px 10px 10px 20px; }
 
+/* line 447, ../sass/buddypress.scss */
 table.forum {
   border: 1px solid #FEF8F8;
   margin: 0;
   width: auto; }
 
+/* line 452, ../sass/buddypress.scss */
 table.forum tr.sticky td {
   background: #FFF9DB;
   border-top: 1px solid #FFE8C4;
   border-bottom: 1px solid #FFE8C4; }
 
+/* line 457, ../sass/buddypress.scss */
 table.forum tr.closed td.td-title {
   padding-left: 35px;
   background-image: url(../images/buddypress/closed.png);
   background-position: 15px 50%;
   background-repeat: no-repeat; }
 
+/* line 463, ../sass/buddypress.scss */
 table.forum td p.topic-text {
-  color: #888;
+  color: #b9b9b9;
   font-size: 85%; }
 
+/* line 467, ../sass/buddypress.scss */
 table.forum tr > td:first-child, table.forum tr > th:first-child {
   padding-left: 20px; }
 
+/* line 468, ../sass/buddypress.scss */
 table.forum tr > td:last-child, table.forum tr > th:last-child {
   padding-right: 20px; }
 
+/* line 469, ../sass/buddypress.scss */
 table.forum tr th#th-title, table.forum tr th#th-poster, table.forum tr th#th-group, table.forum td.td-poster, table.forum td.td-group, table.forum td.td-title {
   text-align: left; }
 
+/* line 470, ../sass/buddypress.scss */
 table.forum td.td-freshness {
   font-size: 85%;
-  color: #888; }
+  color: #b9b9b9; }
 
+/* line 474, ../sass/buddypress.scss */
 table.forum td img.avatar {
   margin-right: 5px;
   display: none; }
 
+/* line 478, ../sass/buddypress.scss */
 table.forum td.td-poster, table.forum td.td-group {
   min-width: 130px; }
 
+/* line 479, ../sass/buddypress.scss */
 table.forum th#th-title {
   width: 40%; }
 
+/* line 480, ../sass/buddypress.scss */
 table.forum th#th-postcount {
   width: 1%; }
 
+/* line 481, ../sass/buddypress.scss */
 table.forum th#th-freshness {
   width: 10%;
   text-align: center; }
 
 /* > Activity Stream Posting
 --------------------------------------------------------------*/
+/* line 487, ../sass/buddypress.scss */
 #item-body form#whats-new-form {
   margin-top: 20px;
   border: none; }
 
+/* line 491, ../sass/buddypress.scss */
 #whats-new-form {
   margin-bottom: 30px; }
 
+/* line 492, ../sass/buddypress.scss */
 .home-page form#whats-new-form {
   border-bottom: none;
   padding-bottom: 0; }
 
+/* line 496, ../sass/buddypress.scss */
 form#whats-new-form h5 {
-  color: #555555;
   font-size: 1.2em;
   font-weight: bold;
   line-height: 25px;
   margin: 0px 0 13px 76px;
   padding: 0 0 0; }
 
+/* line 503, ../sass/buddypress.scss */
 form#whats-new-form #whats-new-avatar {
   float: left; }
 
+/* line 504, ../sass/buddypress.scss */
 form#whats-new-form #whats-new-content {
   margin-left: 54px;
   padding-left: 22px; }
 
+/* line 508, ../sass/buddypress.scss */
 form#whats-new-form #whats-new-textarea {
   margin-bottom: 10px; }
 
+/* line 511, ../sass/buddypress.scss */
 form#whats-new-form textarea {
   font-family: inherit;
   font-size: 110%;
@@ -652,85 +784,103 @@ form#whats-new-form textarea {
   margin: 0;
   width: 100%; }
 
+/* line 518, ../sass/buddypress.scss */
 form#whats-new-form #whats-new-options select {
   max-width: 200px; }
 
+/* line 519, ../sass/buddypress.scss */
 form#whats-new-form #whats-new-submit {
   float: right;
   margin-top: -10px; }
 
+/* line 523, ../sass/buddypress.scss */
 #whats-new-options {
   height: 0;
   overflow: hidden; }
 
 /* > Activity Stream Listing
 --------------------------------------------------------------*/
+/* line 529, ../sass/buddypress.scss */
 ul.activity-list li {
   padding: 20px 0 0 0;
   overflow: hidden; }
 
+/* line 533, ../sass/buddypress.scss */
 ul.activity-list > li:first-child {
   padding-top: 20px; }
 
+/* line 534, ../sass/buddypress.scss */
 ul.activity-list li.has-comments {
   padding-bottom: 20px; }
 
+/* line 535, ../sass/buddypress.scss */
 .activity-list li.mini {
   position: relative;
   padding: 12px 0 0 0; }
 
+/* line 539, ../sass/buddypress.scss */
 .activity-list li.mini div.activity-meta {
   margin: 0; }
 
+/* line 540, ../sass/buddypress.scss */
 .activity-list li.mini .activity-avatar img.avatar, .activity-list li.mini .activity-avatar img.FB_profile_pic {
   height: 40px;
   margin-bottom: 20px;
   width: 40px; }
 
+/* line 545, ../sass/buddypress.scss */
 .activity-list li.activity_comment .activity-avatar img.avatar, .activity-list li.activity_comment .activity-avatar img.FB_profile_pic {
   width: 40px;
   height: 40px;
   margin-left: 20px; }
 
+/* line 550, ../sass/buddypress.scss */
 body.activity-permalink .activity-list li .activity-avatar img.avatar, body.activity-permalink .activity-list li .activity-avatar img.FB_profile_pic {
   width: 100px;
   height: 100px;
   margin-left: 0; }
 
+/* line 555, ../sass/buddypress.scss */
 .activity-list li.mini .activity-content {
   margin-right: 175px; }
 
+/* line 556, ../sass/buddypress.scss */
 .activity-list li.mini .activity-content p {
   margin: 3px 0 0;
   float: left;
   width: 84%; }
 
+/* line 561, ../sass/buddypress.scss */
 .activity-list li.mini .activity-meta {
   position: absolute;
   right: 0;
   top: 15px; }
 
+/* line 566, ../sass/buddypress.scss */
 body.activity-permalink .activity-list li.mini .activity-meta {
   position: absolute;
   right: 15px; }
 
+/* line 570, ../sass/buddypress.scss */
 .activity-list li.mini .activity-comments {
   clear: left;
   font-size: 100%;
   margin-top: 30px; }
 
+/* line 575, ../sass/buddypress.scss */
 .activity-list li .activity-inreplyto {
-  color: #A6A6A6;
   font-size: 85%;
   margin-bottom: 15px;
   margin-top: 20px;
   padding-left: 25px;
   background: url(../images/buddypress/replyto_arrow.gif) 7px 0 no-repeat; }
 
+/* line 582, ../sass/buddypress.scss */
 .activity-list li .activity-inreplyto > p {
   margin: 0;
   display: inline; }
 
+/* line 586, ../sass/buddypress.scss */
 .activity-list li .activity-inreplyto blockquote, .activity-list li .activity-inreplyto div.activity-inner {
   background: none;
   border: none;
@@ -739,14 +889,17 @@ body.activity-permalink .activity-list li.mini .activity-meta {
   margin: 0;
   overflow: hidden; }
 
+/* line 594, ../sass/buddypress.scss */
 body.activity-permalink .activity-list .activity-avatar img {
   width: 100px;
   height: 100px; }
 
+/* line 598, ../sass/buddypress.scss */
 .activity-list .activity-content {
   margin-left: 70px;
   margin-top: -20px; }
 
+/* line 602, ../sass/buddypress.scss */
 body.activity-permalink .activity-list li .activity-content {
   font-size: 130%;
   line-height: 150%;
@@ -756,50 +909,61 @@ body.activity-permalink .activity-list li .activity-content {
   min-height: 35px;
   padding: 15px; }
 
+/* line 611, ../sass/buddypress.scss */
 body.activity-permalink .activity-list li .activity-header > p {
   margin-left: -35px;
   padding: 5px 0 0 38px;
   height: 35px;
   margin-bottom: 0; }
 
+/* line 617, ../sass/buddypress.scss */
 .activity-list .activity-content .activity-header, .activity-list .activity-content .comment-header {
-  color: #888888;
+  color: #b9b9b9;
   font-size: 85%;
   line-height: 180%; }
 
+/* line 622, ../sass/buddypress.scss */
 .activity-list .activity-content .activity-header img.avatar {
   float: none !important;
-  margin: 0 5px -8px 0 !important; }
+  height: 20px;
+  margin: 0 5px 0 0 !important;
+  width: 20px; }
 
+/* line 628, ../sass/buddypress.scss */
 .activity-list .activity-content a:first-child:focus {
   outline: none; }
 
+/* line 629, ../sass/buddypress.scss */
 .activity-list .activity-content span.time-since {
-  color: #bbbbbb; }
+  color: lightgrey; }
 
+/* line 630, ../sass/buddypress.scss */
 .activity-list .activity-content span.activity-header-meta a {
   background: none;
   padding: 0;
   font-size: 85%;
   margin: 0;
   border: none;
-  color: #777;
+  color: #b9b9b9;
   text-decoration: underline; }
 
+/* line 639, ../sass/buddypress.scss */
 a.bp-primary-action span, #reply-title small a span {
   background: none repeat scroll 0 0 #696868;
   border: 1px solid #FFFFFF;
   border-radius: 3px 3px 3px 3px;
-  color: #EFEFEF;
+  color: #e0e0e0;
   font-size: 85%;
   margin-left: 2px;
   padding: 2px 4px 0;
   text-shadow: 0 1px 0 #222222; }
 
+/* line 649, ../sass/buddypress.scss */
 .activity-list .activity-content span.activity-header-meta a:hover {
   color: inherit;
   text-decoration: none; }
 
+/* line 653, ../sass/buddypress.scss */
 .activity-list .activity-content .activity-inner, .activity-list .activity-content blockquote {
   background: #FBFBFB;
   border: 1px solid #F4F4F4;
@@ -807,28 +971,35 @@ a.bp-primary-action span, #reply-title small a span {
   overflow: hidden;
   padding: 10px; }
 
+/* line 660, ../sass/buddypress.scss */
 .activity-list .activity-content .activity-inner p {
   margin: 0; }
 
+/* line 661, ../sass/buddypress.scss */
 .activity-inner img {
   max-width: 100% !important;
   height: auto; }
 
+/* line 665, ../sass/buddypress.scss */
 body.activity-permalink .activity-content .activity-inner, body.activity-permalink .activity-content blockquote {
   margin-top: 5px; }
 
 /* Backwards compatibility. */
+/* line 667, ../sass/buddypress.scss */
 .activity-inner > .activity-inner {
   margin: 0 !important; }
 
+/* line 668, ../sass/buddypress.scss */
 .activity-inner > blockquote {
   margin: 0 !important; }
 
+/* line 669, ../sass/buddypress.scss */
 .activity-list .activity-content img.thumbnail {
   float: left;
   margin: 0 10px 5px 0;
   border: 2px solid #eee; }
 
+/* line 674, ../sass/buddypress.scss */
 .activity-list li.load-more {
   margin: 15px 0;
   padding: 10px 15px;
@@ -839,23 +1010,28 @@ body.activity-permalink .activity-content .activity-inner, body.activity-permali
   border-bottom: 1px solid #ddd;
   min-height: 40px; }
 
+/* line 684, ../sass/buddypress.scss */
 .activity-list li.load-more a {
   color: #555555; }
 
 /* > Activity Stream Comments
 --------------------------------------------------------------*/
+/* line 687, ../sass/buddypress.scss */
 .activity-permalink div.activity {
   margin-left: 30px;
   margin-right: 10px;
   margin-top: 20px; }
 
+/* line 692, ../sass/buddypress.scss */
 div.activity-meta {
   margin: 0 0 20px 3px;
   clear: left; }
 
+/* line 696, ../sass/buddypress.scss */
 .activity-list div.activity-meta a {
   font-size: 75%; }
 
+/* line 697, ../sass/buddypress.scss */
 div.activity-comments {
   position: relative;
   margin: 0 0 0 75px;
@@ -863,80 +1039,100 @@ div.activity-comments {
   overflow: hidden;
   /* IE fix */ }
 
+/* line 703, ../sass/buddypress.scss */
 body.activity-permalink div.activity-comments {
   width: auto;
   margin-left: 135px;
   background: none; }
 
+/* line 708, ../sass/buddypress.scss */
 div.activity-comments ul, div.activity-comments ul li {
   border: none;
   list-style: none; }
 
+/* line 712, ../sass/buddypress.scss */
 div.activity-comments ul {
   clear: left;
   padding: 0; }
 
+/* line 716, ../sass/buddypress.scss */
 div.activity-comments ul li {
   background: #FBFBFB;
   border: 1px solid #F4F4F4;
   padding: 5px; }
 
+/* line 721, ../sass/buddypress.scss */
 body.activity-permalink div.activity-comments ul li {
   border-width: 1px;
   padding: 10px 0 0; }
 
+/* line 725, ../sass/buddypress.scss */
 div.activity-comments ul li p:last-child {
   margin-bottom: 10px; }
 
+/* line 726, ../sass/buddypress.scss */
 div.activity-comments > ul > li:first-child {
   border-top: none; }
 
+/* line 727, ../sass/buddypress.scss */
 div.activity-comments ul li:last-child {
   margin-bottom: 0; }
 
+/* line 728, ../sass/buddypress.scss */
 div.activity-comments ul li > ul {
   margin-top: 0;
   margin-left: 20px; }
 
+/* line 732, ../sass/buddypress.scss */
 body.activity-permalink div.activity-comments ul li > ul {
   margin-top: 15px; }
 
+/* line 733, ../sass/buddypress.scss */
 div.activity-comments div.acomment-avatar img {
   float: left;
   margin-right: 10px;
   height: 30px;
   width: 30px; }
 
+/* line 739, ../sass/buddypress.scss */
 div.activity-comments div.acomment-content {
   font-size: 95%;
   margin-left: 49px;
   margin-top: 5px; }
 
+/* line 744, ../sass/buddypress.scss */
 #content div.activity-comments li {
   background: #FBFBFB;
   border: 1px solid #F4F4F4;
   padding: 10px 15px; }
 
+/* line 749, ../sass/buddypress.scss */
 div.acomment-content .time-since {
   display: none; }
 
+/* line 750, ../sass/buddypress.scss */
 div.acomment-content .activity-delete-link {
   display: none; }
 
+/* line 751, ../sass/buddypress.scss */
 div.acomment-content .comment-header {
   display: none; }
 
+/* line 752, ../sass/buddypress.scss */
 body.activity-permalink div.activity-comments div.acomment-content {
   font-size: 120%; }
 
+/* line 753, ../sass/buddypress.scss */
 div.activity-comments div.acomment-meta {
   font-size: 85%;
-  color: #888; }
+  color: #b9b9b9; }
 
+/* line 757, ../sass/buddypress.scss */
 div.acomment-options a {
   font-size: 80%;
   padding: 0 10px; }
 
+/* line 761, ../sass/buddypress.scss */
 div.activity-comments form.ac-form {
   background: #FAFAFA;
   border: 1px solid #F1F1F1;
@@ -944,27 +1140,33 @@ div.activity-comments form.ac-form {
   margin: 10px 0 10px 33px;
   padding: 8px; }
 
+/* line 768, ../sass/buddypress.scss */
 div.activity-comments li form.ac-form {
   margin-right: 15px; }
 
+/* line 769, ../sass/buddypress.scss */
 div.activity-comments form.root {
   margin-left: 0; }
 
+/* line 770, ../sass/buddypress.scss */
 div.activity-comments div#message {
   margin-top: 15px;
   margin-bottom: 0; }
 
+/* line 774, ../sass/buddypress.scss */
 div.activity-comments form.loading {
   background-image: url(../images/buddypress/ajax-loader.gif);
   background-position: 2% 95%;
   background-repeat: no-repeat; }
 
+/* line 779, ../sass/buddypress.scss */
 div.activity-comments form .ac-textarea {
   padding: 8px;
   border: 1px inset #ccc;
   background: #fff;
   margin-bottom: 10px; }
 
+/* line 785, ../sass/buddypress.scss */
 div.activity-comments form textarea {
   width: 100%;
   font-family: inherit;
@@ -974,30 +1176,36 @@ div.activity-comments form textarea {
   border: none;
   padding: 0; }
 
+/* line 794, ../sass/buddypress.scss */
 div.activity-comments form input {
   margin-top: 5px; }
 
+/* line 795, ../sass/buddypress.scss */
 div.activity-comments form div.ac-reply-avatar {
   float: left;
   height: 25px;
   width: 25px; }
 
+/* line 800, ../sass/buddypress.scss */
 div.acomment-avatar img {
   height: 40px;
   width: 40px; }
 
+/* line 804, ../sass/buddypress.scss */
 div.ac-reply-avatar img {
   height: 25px;
   width: 25px; }
 
+/* line 808, ../sass/buddypress.scss */
 div.activity-comments form div.ac-reply-content {
   margin-left: 25px;
   padding-left: 15px;
-  color: #888;
+  color: #b9b9b9;
   font-size: 85%; }
 
 /* > Private Message Threads
 --------------------------------------------------------------*/
+/* line 816, ../sass/buddypress.scss */
 table#message-threads {
   border: 0 none;
   font-size: 95%;
@@ -1005,18 +1213,22 @@ table#message-threads {
   margin-top: 20px;
   padding: 0; }
 
+/* line 823, ../sass/buddypress.scss */
 table#message-threads th + th, table#message-threads td + td {
   border-left: 0px solid #f2f2f2; }
 
+/* line 824, ../sass/buddypress.scss */
 table#message-threads tr.unread td {
   background: #FFF9DB;
   border-top: 1px solid #FFE8C4;
   border-bottom: 1px solid #FFE8C4;
   font-weight: bold; }
 
+/* line 830, ../sass/buddypress.scss */
 table#message-threads tr.unread td span.activity {
   background: white; }
 
+/* line 831, ../sass/buddypress.scss */
 li span.unread-count, tr.unread span.unread-count {
   background: none repeat scroll 0 0 #DD0000;
   border-radius: 3px 3px 3px 3px;
@@ -1027,20 +1239,24 @@ li span.unread-count, tr.unread span.unread-count {
   padding: 2px 6px;
   position: relative; }
 
+/* line 841, ../sass/buddypress.scss */
 div.item-list-tabs ul li a span.unread-count {
   padding: 1px 6px;
   color: #fff; }
 
+/* line 845, ../sass/buddypress.scss */
 #content .messages .avatar {
   height: 45px;
   width: 45px; }
 
+/* line 849, ../sass/buddypress.scss */
 .messages th, .messages td {
   border-top: 1px solid #F4F4F4;
   line-height: 18px;
   padding: 15px 10px 15px 0;
   text-align: left; }
 
+/* line 855, ../sass/buddypress.scss */
 div.messages-options-nav {
   background: transparent;
   border-bottom: 1px solid #DDDDDD;
@@ -1049,9 +1265,11 @@ div.messages-options-nav {
   padding: 8px 15px;
   text-align: right; }
 
+/* line 863, ../sass/buddypress.scss */
 div.messages-options-nav select {
   float: right; }
 
+/* line 864, ../sass/buddypress.scss */
 .thread-options .button {
   font-size: 85%;
   left: 10px;
@@ -1059,84 +1277,105 @@ div.messages-options-nav select {
   padding: 0 7px;
   position: relative; }
 
+/* line 871, ../sass/buddypress.scss */
 div#message-thread div.message-box {
   margin: 0 -20px;
   padding: 15px; }
 
+/* line 875, ../sass/buddypress.scss */
 div#message-thread div.alt {
   background: #f4f4f4; }
 
+/* line 876, ../sass/buddypress.scss */
 div#message-thread p#message-recipients {
   margin: 10px 0 20px 0; }
 
+/* line 877, ../sass/buddypress.scss */
 div#message-thread img.avatar {
   float: left;
   margin: 0 10px 0 0;
   vertical-align: middle; }
 
+/* line 882, ../sass/buddypress.scss */
 div#message-thread strong {
   margin: 0;
   font-size: 110%; }
 
+/* line 886, ../sass/buddypress.scss */
 div#message-thread strong a {
   text-decoration: none; }
 
+/* line 887, ../sass/buddypress.scss */
 div#message-thread strong span.activity {
   margin: 4px 0 0 10px; }
 
+/* line 888, ../sass/buddypress.scss */
 div#message-thread div.message-metadata {
   overflow: hidden; }
 
+/* line 889, ../sass/buddypress.scss */
 div#message-thread div.message-content {
   margin-left: 55px; }
 
+/* line 890, ../sass/buddypress.scss */
 div#message-thread div.message-options {
   text-align: right; }
 
+/* line 891, ../sass/buddypress.scss */
 #message-threads .thread-avatar {
   width: 8%; }
 
 /* > Group Forum Topics
 --------------------------------------------------------------*/
+/* line 894, ../sass/buddypress.scss */
 ul#topic-post-list {
   margin-top: 15px;
   width: auto; }
 
+/* line 898, ../sass/buddypress.scss */
 ul#topic-post-list li {
   padding: 15px 15px 15px 0;
   position: relative; }
 
+/* line 902, ../sass/buddypress.scss */
 ul#topic-post-list li.alt {
   background: #fbfbfb; }
 
+/* line 903, ../sass/buddypress.scss */
 ul#topic-post-list li div.poster-meta {
   margin-bottom: 10px;
-  color: #888; }
+  color: #b9b9b9; }
 
+/* line 907, ../sass/buddypress.scss */
 ul#topic-post-list li div.post-content {
   margin-left: 54px; }
 
+/* line 908, ../sass/buddypress.scss */
 div.admin-links {
   position: absolute;
   top: 15px;
   right: 25px;
-  color: #888;
+  color: #b9b9b9;
   font-size: 85%; }
 
+/* line 915, ../sass/buddypress.scss */
 div#topic-meta div.admin-links {
   bottom: 0;
   right: 0;
   top: auto;
   bottom: 4px; }
 
+/* line 921, ../sass/buddypress.scss */
 div#topic-meta {
   position: relative;
   padding: 5px 0; }
 
+/* line 925, ../sass/buddypress.scss */
 div#new-topic-post {
   margin: 0;
   padding: 1px 0 0 0; }
 
 /*Core Fixes*/
+/* line 930, ../sass/buddypress.scss */
 .jcrop-holder img, #avatar-crop-pane img {
   max-width: none; }

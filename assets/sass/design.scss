@@ -1,9 +1,4 @@
 @import "settings";
-
-body {
-  background: url("../images/design/bg.png") repeat white;
-}
-
 #wrapper {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -23,17 +18,17 @@ h1 {
 }
 
 a {
-  color: $mainColor;
+  color: $main-color;
   text-decoration: none;
   @include transition (color 0.1s);
 
   &:hover {
-  color: darken($mainColor, 10%);
+  color: darken($main-color, 15%);
     text-decoration: none;
   }
 
   &:focus {
-    color: darken($mainColor, 10%);
+    color: darken($main-color, 15%);
   }
 }
 
@@ -73,23 +68,26 @@ h1#site-title, div#site-title {
   padding: 10px 30px 6px;
 }
 
+#site-description {
+  color: lighten($header-color, 40%);
+}
+
 /* Global CSS3 Stuff */
 
 .main-menu,.top-menu,.top-wrap .sub-menu,.item-list-tabs,thead:first-child tr th,thead:first-child tr td,.base-menu ul ul {
-  background-color: #222222;
+  background-color: $dark-color;
   background-repeat: repeat-x;
   padding-left: 20px;
   padding-right: 20px;
-  border-bottom: 2px solid #628FAA;
-  border-top: 2px solid #525151;
-  @include background(linear-gradient(center top, #333, #222));
+  border-bottom: 2px solid $dark-border-bottom;
+  border-top: 1px solid $dark-border-top;
   @include box-shadow ( 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset );
 }
 
 #footer {
   .widget h4 {
     border-bottom: 1px solid #3E3C3C;
-    color: #E0E0E0;
+    color: lighten($light-color, 20%);
   }
   padding: 0 30px 5px;
 }
@@ -114,7 +112,7 @@ h1#site-title, div#site-title {
 /* Menus */
 
 .base-menu ul a, div.item-list-tabs ul li a {
-  color: #BFBFBF;
+  color: $light-color;
   font-weight: 400;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -149,7 +147,7 @@ h1#site-title, div#site-title {
 /* Footer */
 
 #footer .widget {
-  color: #BFBFBF;
+  color: $light-color;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -189,7 +187,7 @@ div {
   }
   &.item-list-tabs ul li a span {
   @include border-radius(4px);  
-    color: #5ABCF8;
+    color: $light-color;
   }
 }
 
@@ -201,7 +199,7 @@ div {
     border-top: 0px;
   }
   &.item-list-tabs ul li a {
-    color: #787676;
+    color: darken($light-color, 30%);
     font-weight: 500;
     text-shadow: none;
   }
@@ -220,7 +218,7 @@ span.activity {
   border: 1px solid #EDEDED;
   @include border-radius(3px);  
   @include box-shadow (0 1px 1px rgba(0, 0, 0, 0.04)); 
-  color: lighten($headerFontColor, 40%);
+  color: darken($light-color, 20%);
   font-size: 80%;
   font-weight: bold;
   margin-bottom: 10px;
@@ -231,7 +229,7 @@ span.activity {
 .footer-wrap {
   background: none repeat scroll 0 0 #2F2F2F;
   border-top: 1px solid #454545;
-  color: #DDDDDD;
+  color: darken($light-color, 20% );
 }
 
 #copyright-info {
@@ -246,6 +244,6 @@ thead:first-child tr {
   th, td {
     padding-left: 10px;
     padding-right: 10px;
-    color: #DDD;
+    color: darken($light-color, 40%);
   }
 }

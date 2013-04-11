@@ -36,7 +36,6 @@ h1#site-title,div#site-title {
 }
 #site-description {
     font-style: italic;
-    color: #999999;
     position: relative;
     font-size: 14px;
     line-height: 180%;
@@ -151,11 +150,11 @@ float: right;
     float: right;
     margin: 5px 0 0 0;
 }
-.base-menu li li a span { padding: 0; color: #BBB; }
+.base-menu li li a span { padding: 0; }
 .base-menu ul li.sfHover li a,
 .base-menu ul li.sfHover li a:hover,
 .base-menu ul li.sfHover li a span:hover {
-color: #DDD;
+color: $light-color;
 }
 /*  Make sub menus appear */
 .base-menu ul li:hover ul,
@@ -187,16 +186,13 @@ color: #DDD;
     width: 180px; /* left offset of submenus need to match (see below) */
     padding: 15px 5px 15px 5px;
     margin: 3px 0 0 0;
-    background: #FFF;
+    background: $lightbg;
 }
 .base-menu ul ul li {
     float: left;
     width: 150px;
     background: none;
     padding: 0 5px 0 5px;
-}
-.base-menu li a:hover {
-    color: #DDD;
 }
 .base-menu ul ul li:first-child { border-top: none }
 .base-menu ul ul li:last-child { border-bottom: none }
@@ -256,12 +252,10 @@ border: 0px;
 #footer p:last-child { margin-bottom: 0 }
 .footer-widget h3 {
     margin-bottom: 10px;
-    color: #FEDA71;
     font-size: 16px;
 }
 #footer-widget-right { border-right: none; margin-right: 0px; }
 #footer-widget-left { border-left: none;  margin-left: 0px; }
-#footer-menu  ul li a:hover { color: #777 }
 #footer-menu ul li { display: inline }
 #footer-menu ul li a {
     padding-right: 8px;

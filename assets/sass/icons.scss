@@ -1,5 +1,5 @@
 /* Using some fancy CSS magic to add our icons */
-
+@import "settings";
 .item-list-tabs * a:before,
 #item-buttons * a:before,
 .sidebar-activity-tabs * a:before,
@@ -27,14 +27,7 @@ div.link-vote-panel div.clickers a.up:before,
 #subscription-toggle:before,
 .single-topic h1:before,
 .group-forum-topic #bbpress-forums h3:before {
-    font-weight: normal;
-    font-family: "iconsweetsRegular";
-    color: inherit;
-    padding-right: 2px;
-    font-size: 130%;
-    position: relative;
-    top: 2px;
-    text-transform: none;
+    @include font-icon;
 }
 
 /* WordPress Icons */

@@ -1,23 +1,28 @@
 /* Post Meta */
+/* line 3, ../sass/wordpress.scss */
 span.edit-link {
   margin-left: 1px;
   margin-right: 9px;
   float: right; }
 
+/* line 8, ../sass/wordpress.scss */
 span.edit-link a {
   color: #999999; }
 
 /* The actual Posts*/
+/* line 10, ../sass/wordpress.scss */
 .author-avatar {
   float: left;
   margin-bottom: 0;
   margin-right: 10px;
   margin-top: 0; }
 
+/* line 16, ../sass/wordpress.scss */
 .entry {
   margin-bottom: 30px;
   margin-top: 30px; }
 
+/* line 21, ../sass/wordpress.scss */
 .post dd.wp-caption p.wp-caption-text,
 .wp-caption-text {
   font-style: italic;
@@ -26,22 +31,26 @@ span.edit-link a {
   padding: 0 4px 5px 0;
   font-size: 12px; }
 
+/* line 28, ../sass/wordpress.scss */
 .post-meta-data span {
   border-right: 1px solid #DDD;
   margin-right: 5px;
   padding-right: 5px; }
 
+/* line 34, ../sass/wordpress.scss */
 .post .author-box img,
 .comment-avatar-box img {
   float: none;
   margin: 0;
   border: 4px solid #fff; }
 
+/* line 39, ../sass/wordpress.scss */
 .post img.alignright {
   margin: 0 0 2px 7px;
   display: inline;
   padding: 4px; }
 
+/* line 44, ../sass/wordpress.scss */
 .post img.wp-smiley {
   float: none !important;
   clear: none !important;
@@ -49,30 +58,36 @@ span.edit-link a {
   border: none !important;
   padding: 0 !important; }
 
+/* line 51, ../sass/wordpress.scss */
 .post-content {
   margin-bottom: 60px; }
 
+/* line 54, ../sass/wordpress.scss */
 .post img.alignleft {
   margin: 0 7px 2px 0;
   display: inline;
   padding: 4px; }
 
+/* line 60, ../sass/wordpress.scss */
 .post .aligncenter,
 .post .aligncenter {
   margin-left: auto;
   margin-right: auto;
   display: block; }
 
+/* line 66, ../sass/wordpress.scss */
 .post img.centered,
 img.aligncenter {
   margin-left: auto;
   margin-right: auto;
   display: block; }
 
+/* line 71, ../sass/wordpress.scss */
 .post img {
   max-width: 100%;
   height: auto; }
 
+/* line 75, ../sass/wordpress.scss */
 .post .wp-caption {
   background-color: #F9F9F9;
   border: 1px solid #DDDDDD;
@@ -83,18 +98,22 @@ img.aligncenter {
   padding-top: 4px;
   text-align: center; }
 
+/* line 85, ../sass/wordpress.scss */
 .post .wp-caption img {
   margin: 0;
   border: 0 none;
   padding: 0; }
 
+/* line 90, ../sass/wordpress.scss */
 .postthumb {
   margin-bottom: 20px; }
 
+/* line 93, ../sass/wordpress.scss */
 .postthumb img {
   max-width: 100%;
   height: auto; }
 
+/* line 98, ../sass/wordpress.scss */
 #single-attachment img {
   margin-top: 25px;
   margin-bottom: 25px; }
@@ -103,15 +122,18 @@ img.aligncenter {
 /* Captions */
 /* Block Quotes */
 /* page links */
+/* line 106, ../sass/wordpress.scss */
 .page-link {
   font-weight: bold;
   word-spacing: 0.5em;
   margin: 0 0 22px; }
 
+/* line 112, ../sass/wordpress.scss */
 .page-link a:active,
 .page-link a:hover {
   color: #ff4b33; }
 
+/* line 114, ../sass/wordpress.scss */
 .page-link a:link,
 .page-link a:visited {
   font-weight: normal;
@@ -119,16 +141,19 @@ img.aligncenter {
   padding: 5px 8px; }
 
 /* code in posts */
+/* line 121, ../sass/wordpress.scss */
 .post .alignright {
   margin-left: 15px;
   float: right;
   margin-bottom: 15px; }
 
+/* line 126, ../sass/wordpress.scss */
 .post .alignleft {
   margin-right: 15px;
   float: left; }
 
 /* per post navigation and pagination */
+/* line 134, ../sass/wordpress.scss */
 ul.page-numbers li a,
 ul.page-numbers li span,
 .paged-navigation,
@@ -145,23 +170,28 @@ ul.page-numbers li span,
   text-align: center;
   word-spacing: 10px; }
 
+/* line 149, ../sass/wordpress.scss */
 ul.page-numbers li a:hover,
 .paged-navigation:hover,
 .comment-navigation:hover {
   background: #444;
   color: #FFF; }
 
+/* line 153, ../sass/wordpress.scss */
 ul.page-numbers {
   text-align: center;
   margin-bottom: 20px; }
 
+/* line 157, ../sass/wordpress.scss */
 ul.page-numbers li span {
   background: #444;
   color: #FFF; }
 
+/* line 161, ../sass/wordpress.scss */
 ul.page-numbers li {
   display: inline; }
 
+/* line 162, ../sass/wordpress.scss */
 .pagination {
   border-bottom: 1px solid #EAEAEA;
   height: 16px;
@@ -170,6 +200,7 @@ ul.page-numbers li {
   color: #888888;
   font-size: 90%; }
 
+/* line 173, ../sass/wordpress.scss */
 .pagination#user-pag,
 .friends .pagination,
 .mygroups .pagination,
@@ -179,6 +210,7 @@ ul.page-numbers li {
   padding: 8px 15px; }
 
 /*Post Meta */
+/* line 182, ../sass/wordpress.scss */
 .post-meta-data,
 .comment-meta,
 .comment-options,
@@ -192,24 +224,29 @@ p#breadcrumbs {
   padding: 3px 0;
   margin-bottom: 10px; }
 
+/* line 192, ../sass/wordpress.scss */
 span.post-comments {
   float: right;
   margin-right: 5px;
   border-right: 0px; }
 
+/* line 197, ../sass/wordpress.scss */
 p#breadcrumbs {
   margin-top: 0px; }
 
 /* Intro Boxes for authors, categories and tags */
+/* line 199, ../sass/wordpress.scss */
 .post-author-box {
   float: right;
   padding: 3px;
   display: none; }
 
+/* line 204, ../sass/wordpress.scss */
 .post-author-box img {
   width: 50px;
   height: 50px; }
 
+/* line 211, ../sass/wordpress.scss */
 .author-box,
 .category-box,
 .tag-box,
@@ -222,98 +259,120 @@ p#breadcrumbs {
   -moz-border-radius: 3px;
   padding: 10px 20px; }
 
+/* line 222, ../sass/wordpress.scss */
 #category-description p,
 #tag-description p {
   font-style: italic;
   margin-top: 10px;
   margin-bottom: 0px; }
 
+/* line 228, ../sass/wordpress.scss */
 .authorbox h3 {
   font-style: normal;
   margin-bottom: 10px;
   color: #555555;
   font-size: 16px; }
 
+/* line 234, ../sass/wordpress.scss */
 #author-description {
   overflow: hidden;
   padding-bottom: 15px; }
 
+/* line 238, ../sass/wordpress.scss */
 #author-description img {
   margin-top: 2px;
   margin-right: 10px;
   float: left; }
 
+/* line 244, ../sass/wordpress.scss */
 #category-description,
 #tag-description {
   padding: 10px; }
 
+/* line 247, ../sass/wordpress.scss */
 #author-social {
   float: right;
   width: 25%; }
 
 /*Search Page*/
+/* line 254, ../sass/wordpress.scss */
 .search-title {
   font-size: 18px;
   color: #999; }
 
+/* line 259, ../sass/wordpress.scss */
 .search-title span {
   color: #444; }
 
 /* ============ */
 /* ! Comments   */
 /* ============ */
+/* line 266, ../sass/wordpress.scss */
 .comment-content {
   margin-bottom: 40px;
   position: relative; }
 
+/* line 270, ../sass/wordpress.scss */
 #comments {
   margin-top: 20px;
   position: relative; }
 
+/* line 274, ../sass/wordpress.scss */
 #comments .pingbacks li.pingback {
   margin: 10px 0; }
 
+/* line 275, ../sass/wordpress.scss */
 #comments .pingbacks li.pingback .reply {
   display: none; }
 
+/* line 276, ../sass/wordpress.scss */
 #comments .cancel-comment-reply {
   margin: 10px 0; }
 
+/* line 277, ../sass/wordpress.scss */
 #comments .comment-entry p {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 0 20px 62px; }
 
+/* line 282, ../sass/wordpress.scss */
 #comments .bypostauthor {
   background: #f9f9f9; }
 
+/* line 283, ../sass/wordpress.scss */
 #comments .comment-head {
   margin: 0 0 15px 70px; }
 
+/* line 284, ../sass/wordpress.scss */
 #comments .comment-head .name {
   font-weight: bold;
   margin: 0; }
 
+/* line 290, ../sass/wordpress.scss */
 #comments .comment-head .date,
 #comments .comment-head .edit,
 #comments .comment-head .perma {
   font-size: 11px; }
 
+/* line 291, ../sass/wordpress.scss */
 #comments .avatar img {
   vertical-align: middle;
   width: 40px;
   height: 40px;
   margin: 0; }
 
+/* line 297, ../sass/wordpress.scss */
 #comments ul.children {
   margin: 10px 10px 0 25px;
   padding: 0; }
 
+/* line 302, ../sass/wordpress.scss */
 #comments .navigation a {
   text-decoration: none;
   margin: 15px 0 0 0;
   display: block; }
 
+/* line 308, ../sass/wordpress.scss */
 #comments blockquote {
   font-style: italic;
   font-weight: bold;
@@ -323,50 +382,61 @@ p#breadcrumbs {
   padding-left: 0;
   padding-top: 20px; }
 
+/* line 317, ../sass/wordpress.scss */
 #comments .comment {
   margin-top: 10px;
   list-style-type: none;
   width: 100%; }
 
+/* line 322, ../sass/wordpress.scss */
 #comments .comment .comment-container {
   border-bottom: 1px solid #F4F4F4;
   padding-bottom: 15px;
   position: relative; }
 
+/* line 327, ../sass/wordpress.scss */
 #comments h3#pings {
   margin-top: 25px; }
 
+/* line 328, ../sass/wordpress.scss */
 #comments .avatar {
   float: left;
   margin: 0 15px 10px 0; }
 
+/* line 332, ../sass/wordpress.scss */
 #comments .reply {
   left: 0;
   position: absolute;
   top: 60px; }
 
+/* line 337, ../sass/wordpress.scss */
 #comments .reply a {
   font-size: 70%;
   padding: 0 6px; }
 
+/* line 342, ../sass/wordpress.scss */
 ol.commentlist {
   margin-left: 0px;
   list-style: none;
   padding-left: 0px; }
 
+/* line 347, ../sass/wordpress.scss */
 #comments .unapproved {
   font-style: italic;
   color: #999; }
 
 /* The Comments Forms */
+/* line 352, ../sass/wordpress.scss */
 #respond {
   margin: 40px 0 0; }
 
+/* line 353, ../sass/wordpress.scss */
 #respond #reply-title small {
   margin-top: 5px;
   display: block;
   font-size: 13px; }
 
+/* line 358, ../sass/wordpress.scss */
 #respond span.required {
   color: #CFCFCF;
   display: block;
@@ -375,23 +445,28 @@ ol.commentlist {
   font-weight: bold;
   margin: 4px 0 0 -12px; }
 
+/* line 366, ../sass/wordpress.scss */
 #respond .right {
   float: left;
   width: 380px; }
 
+/* line 370, ../sass/wordpress.scss */
 #respond label {
   color: #777777;
   padding: 4px 0;
   font-size: 11px; }
 
+/* line 375, ../sass/wordpress.scss */
 #respond .left {
   margin-right: 15px;
   float: left;
   width: 200px; }
 
+/* line 380, ../sass/wordpress.scss */
 #commentform {
   margin: 10px 0 0 10px; }
 
+/* line 382, ../sass/wordpress.scss */
 #commentform input.txt,
 #commentform textarea {
   border-color: #ccc #efefef #efefef #ccc;
@@ -399,9 +474,11 @@ ol.commentlist {
   border-style: solid;
   font-size: inherit; }
 
+/* line 388, ../sass/wordpress.scss */
 li.bypostauthor {
   background: none repeat scroll 0 0 #f8fdff !important; }
 
+/* line 389, ../sass/wordpress.scss */
 #commentform input.txt {
   background: #F9F9F9;
   width: 170px;
@@ -409,35 +486,44 @@ li.bypostauthor {
   margin: 0 5px 10px 0;
   padding: 5px 7px; }
 
+/* line 396, ../sass/wordpress.scss */
 #commentform textarea {
   width: 95%;
   height: auto; }
 
+/* line 400, ../sass/wordpress.scss */
 #commentform #submit {
   margin: 15px 0 0 0; }
 
+/* line 401, ../sass/wordpress.scss */
 .form-allowed-tags {
   font-size: 90%;
   color: #777; }
 
 /* Pingsbacks */
+/* line 406, ../sass/wordpress.scss */
 h3#pings {
   margin: 25px 0 10px 0; }
 
+/* line 407, ../sass/wordpress.scss */
 .pinglist li {
   list-style-type: decimal;
   margin: 0 0 0 20px; }
 
+/* line 411, ../sass/wordpress.scss */
 .pinglist li .pingcontent {
   margin: 10px 0;
   display: block; }
 
+/* line 415, ../sass/wordpress.scss */
 .pinglist li .author {
   font-weight: bold;
   font-size: 15px; }
 
+/* line 419, ../sass/wordpress.scss */
 .pinglist li .date {
   font-size: 11px; }
 
+/* line 420, ../sass/wordpress.scss */
 p.form-allowed-tags {
   width: 70%; }

@@ -1,13 +1,16 @@
 /* Base Type Styles Using Modular Scale ---------------------- */
+/* line 3, ../sass/typography.scss */
 body {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
+/* line 7, ../sass/typography.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
   font-size: 14px;
   direction: ltr; }
 
+/* line 14, ../sass/typography.scss */
 p {
   font-family: inherit;
   font-weight: normal;
@@ -15,69 +18,85 @@ p {
   line-height: 1.6;
   margin-bottom: 19px; }
 
+/* line 16, ../sass/typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
-  color: #444444;
+  color: #232323;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
   margin-bottom: 14px;
   margin-top: 14px; }
+  /* line 25, ../sass/typography.scss */
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
-    color: #919191;
+    color: #707070;
     line-height: 0; }
 
+/* line 28, ../sass/typography.scss */
 h1 {
   font-size: 33px; }
 
+/* line 29, ../sass/typography.scss */
 h2 {
   font-size: 25px; }
 
+/* line 30, ../sass/typography.scss */
 h3 {
   font-size: 25px; }
 
+/* line 31, ../sass/typography.scss */
 h4 {
   font-size: 19px; }
 
+/* line 32, ../sass/typography.scss */
 h5 {
   font-size: 19px; }
 
+/* line 33, ../sass/typography.scss */
 h6 {
   font-size: 14px; }
 
 /* ============================================= */
 /* ! Typography and Tags (ul, li,a, input etc)   */
 /* ============================================= */
+/* line 41, ../sass/typography.scss */
 h1#category-title, h1#tag-title {
   font-style: normal;
   color: darken, normal, 20%;
   font-size: 114.3%;
   line-height: 18px;
   margin: 0; }
+/* line 48, ../sass/typography.scss */
 h1#category-title span, h1#tag-title span {
-  color: #919191;
+  color: #707070;
   font-size: 120%; }
 
+/* line 55, ../sass/typography.scss */
 h2.page-title a, h2.post-title a {
   margin-bottom: 0;
   margin-top: 0; }
 
+/* line 62, ../sass/typography.scss */
 h1.page-title a, h1.post-title a {
   margin-bottom: 0;
   margin-top: 0; }
+/* line 66, ../sass/typography.scss */
 h1 .post-edit-link {
   font-size: 27px !important;
   line-height: 0; }
 
+/* line 73, ../sass/typography.scss */
 h2 .post-edit-link {
   font-size: 100% !important;
   line-height: 0; }
 
+/* line 78, ../sass/typography.scss */
 .moretag {
   margin-left: 10px; }
 
+/* line 82, ../sass/typography.scss */
 hr {
   border: solid #ddd;
   border-width: 1px 0 0;
@@ -85,86 +104,112 @@ hr {
   margin: 22px 0 21px;
   height: 0; }
 
+/* line 85, ../sass/typography.scss */
 em, i {
   font-style: italic;
   line-height: inherit; }
 
+/* line 86, ../sass/typography.scss */
 strong, b {
   font-weight: bold;
   line-height: inherit; }
 
+/* line 87, ../sass/typography.scss */
 small {
   font-size: 60%;
   line-height: inherit; }
 
+/* line 88, ../sass/typography.scss */
 code {
   font-weight: bold;
-  background: #ffff99; }
+  background: #f9f9f9; }
 
 /* Lists ---------------------- */
+/* line 91, ../sass/typography.scss */
 ul, ol, dl {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 19px;
   list-style-position: outside; }
 
+/* line 94, ../sass/typography.scss */
 ul li ul, ul li ol {
   margin-left: 20px;
   margin-bottom: 0; }
+/* line 96, ../sass/typography.scss */
 ul.square, ul.circle, ul.disc {
   margin-left: 19px; }
+/* line 97, ../sass/typography.scss */
 ul.square {
   list-style-type: square; }
+  /* line 98, ../sass/typography.scss */
   ul.square li ul {
     list-style: inherit; }
+/* line 100, ../sass/typography.scss */
 ul.circle {
   list-style-type: circle; }
+  /* line 101, ../sass/typography.scss */
   ul.circle li ul {
     list-style: inherit; }
+/* line 103, ../sass/typography.scss */
 ul.disc {
   list-style-type: disc; }
+  /* line 104, ../sass/typography.scss */
   ul.disc li ul {
     list-style: inherit; }
+/* line 106, ../sass/typography.scss */
 ul.no-bullet {
   list-style: none; }
+/* line 107, ../sass/typography.scss */
 ul.large li {
   line-height: 21px; }
 
+/* line 109, ../sass/typography.scss */
 ol {
   margin-left: 20px; }
+  /* line 111, ../sass/typography.scss */
   ol li ul, ol li ol {
     margin-left: 20px;
     margin-bottom: 0; }
 
+/* line 115, ../sass/typography.scss */
 dl dt {
   font-weight: bold; }
+/* line 116, ../sass/typography.scss */
 dl dd {
   margin-bottom: 10px; }
 
 /* Blockquotes ---------------------- */
+/* line 120, ../sass/typography.scss */
 blockquote, blockquote p {
   line-height: 1.5;
-  color: #919191; }
+  color: #707070; }
 
+/* line 121, ../sass/typography.scss */
 blockquote {
   margin: 0 0 19px;
   padding: 9px 20px 0 19px;
   border-left: 1px solid #ddd; }
+  /* line 122, ../sass/typography.scss */
   blockquote cite {
     display: block;
     font-size: 13px;
-    color: #777777; }
+    color: #565656; }
+    /* line 123, ../sass/typography.scss */
     blockquote cite:before {
       content: "\2014 \0020"; }
+    /* line 124, ../sass/typography.scss */
     blockquote cite a, blockquote cite a:visited {
-      color: #777777; }
+      color: #565656; }
 
+/* line 128, ../sass/typography.scss */
 abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #444444;
+  color: #232323;
   border-bottom: 1px solid #ddd;
   cursor: help; }
 
+/* line 129, ../sass/typography.scss */
 abbr {
   text-transform: none; }
